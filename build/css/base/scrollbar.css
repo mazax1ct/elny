@@ -1,0 +1,22 @@
+
+
+/* width */
+.cscroll::-webkit-scrollbar {
+    width: 9px;
+}
+
+/* Track */
+.cscroll::-webkit-scrollbar-track {
+    background: #D8DBE6;
+}
+
+/* Handle */
+.cscroll::-webkit-scrollbar-thumb {
+    background: #666B80;
+}
+
+/* Handle on hover */
+.cscroll::-webkit-scrollbar-thumb:hover {
+    background: #af9292;
+    cursor: pointer;
+}

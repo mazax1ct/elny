@@ -1,0 +1,14 @@
+.front .ymaps-2-1-74-balloon__close+.ymaps-2-1-74-balloon__content {
+    margin-right: 0;
+    max-width: 345px;
+    padding: 18px 27px;
+}
+.front .ymaps-2-1-74-balloon__close+.ymaps-2-1-74-balloon__content > ymaps {
+    max-width: 345px;
+    font-size: 16px;
+}
+.front .ymaps-2-1-74-map ymaps {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
