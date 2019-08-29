@@ -1,0 +1,106 @@
+.front {
+  .input-block {
+    display: block;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__label {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
+      margin-bottom: 5px;
+    }
+
+    &__input,
+    &__textarea {
+      background-color: #fff;
+      box-shadow: none;
+      border: 1px solid $purple;
+      border-radius: 0;
+      font-family: 'Muller', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      padding: 12px 4px;
+      transition: border-color 0.3s;
+      width: 100%;
+
+      &:focus {
+        border-color: $dark_purple;
+      }
+    }
+
+    &__textarea {
+      height: 70px;
+      overflow-y: auto;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      resize: none;
+    }
+  }
+
+  .file-upload {
+    align-items: center;
+    border: 1px solid $purple;
+    border-radius: 6px;
+    color: $purple;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    height: 40px;
+    justify-content: center;
+    line-height: 18px;
+    letter-spacing: 2px;
+    min-width: 270px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    width: 270px;
+
+    &__file {
+      cursor: pointer;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .button {
+    border: 1px solid $purple;
+    border-radius: 6px;
+    color: $purple;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    height: 40px;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--big {
+      height: 50px;
+    }
+
+    &--wide {
+      width: 100%;
+    }
+
+    &--fill {
+      background-color: $purple;
+      color: #fff;
+    }
+  }
+}

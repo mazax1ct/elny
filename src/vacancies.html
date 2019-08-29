@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Main catalog</title>
+
+  //= template/style.html
+</head>
+
+<body class="front">
+  //= template/svg.html
+  <div id="app">
+    //= template/header.html
+    //= template/menu_second_level.html
+    //= template/alert-holder.html
+    <div class="container">
+      <div class="breadcrumb">
+        <ul class="breadcrumb-holder">
+          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Главная</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item"><a href="#">О нас</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-last">
+              Вакансии
+            </span>
+          </li>
+          <li class="breadcrumb-item"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1 class="mb-40">Вакансии</h1>
+        <div class="vacancy">
+          <div class="vacancy__image">
+            <img src="images/vacancies/img_1.jpg" alt="Менеджер">
+          </div>
+          <div class="vacancy__description">
+            <h2><span class="vacancy__position">Менеджер</span> з/п от 40 000 <span class="rub">руб.</span></h2>
+            <p>Товарищи! рамки и место обучения кадров позволяет оценить значение существенных финансовых и административных условий. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке направлений
+              прогрессивного развития.</p>
+            <p><button class="js-vacancy-popup vacancy__button" type="button">Подать заявку</button></p>
+          </div>
+        </div>
+        <div class="vacancy">
+          <div class="vacancy__image vacancy__image--reverse">
+            <img src="images/vacancies/img_2.jpg" alt="Менеджер">
+          </div>
+          <div class="vacancy__description">
+            <h2><span class="vacancy__position">Дизайнер</span> з/п от 40 000 <span class="rub">руб.</span></h2>
+            <p>Товарищи! рамки и место обучения кадров позволяет оценить значение существенных финансовых и административных условий. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке направлений
+              прогрессивного развития.</p>
+            <p><button class="js-vacancy-popup vacancy__button" type="button">Подать заявку</button></p>
+          </div>
+        </div>
+        <div class="vacancy">
+          <div class="vacancy__image">
+            <img src="images/vacancies/img_3.jpg" alt="Менеджер">
+          </div>
+          <div class="vacancy__description">
+            <h2><span class="vacancy__position">Бухгалтер</span> з/п от 40 000 <span class="rub">руб.</span></h2>
+            <p>Товарищи! рамки и место обучения кадров позволяет оценить значение существенных финансовых и административных условий. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке направлений
+              прогрессивного развития.</p>
+            <p><button class="js-vacancy-popup vacancy__button" type="button">Подать заявку</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    //= template/footer.html
+
+    <div class="popups-wrapper">
+      <div id="vacancy" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title">Анкета соискателя</p>
+        <form action="">
+          <label class="input-block" for="email">
+            <span class="input-block__label">Email</span>
+            <input id="email" class="input-block__input" type="text" name="email" value="">
+          </label>
+          <label class="input-block" for="name">
+            <span class="input-block__label">ФИО</span>
+            <input id="name" class="input-block__input" type="text" name="name" value="">
+          </label>
+          <label class="input-block" for="phone">
+            <span class="input-block__label">Телефон</span>
+            <input id="phone" class="input-block__input" type="text" name="phone" value="">
+          </label>
+          <label class="input-block" for="city">
+            <span class="input-block__label">Город</span>
+            <input id="city" class="input-block__input" type="text" name="city" value="">
+          </label>
+          <label class="input-block" for="exp">
+            <span class="input-block__label">Опыт работы</span>
+            <textarea id="exp" class="input-block__textarea"></textarea>
+          </label>
+          <label class="input-block" for="comment">
+            <span class="input-block__label">Комментарий</span>
+            <textarea id="comment" class="input-block__textarea"></textarea>
+          </label>
+          <label class="file-upload" for="file-upload">
+            <input class="file-upload__file" type="file">
+            Загрузить файл резюме
+          </label>
+          <div class="n-popup__button-block mt-60">
+            <button class="button button--big button--fill button--wide" type="submit">Подать заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  //= template/scripts.html
+</body>
+
+</html>

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>404</title>
+  <title>Main catalog</title>
 
   <link href="css/base/stylesheet.css" rel="stylesheet" position="1">
   <link href="css/base/nouislider.css" rel="stylesheet" position="1">
@@ -199,19 +199,69 @@
     <div class="alert-holder" style="display: none;">
       <div class="alert"><span></span> <a href="#">×</a></div>
     </div>
+    <div class="container">
+      <div class="breadcrumb">
+        <ul class="breadcrumb-holder">
+          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Главная</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item"><a href="#">О нас</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-last">
+              Вакансии
+            </span>
+          </li>
+          <li class="breadcrumb-item"></li>
+        </ul>
+      </div>
+    </div>
     <div class="main">
       <div class="container">
-        <div class="page-404">
-          <div class="page-404__text-block">
-            <h1>Страница не найдена</h1>
-            <p>Скорее всего:</p>
-            <ul>
-              <li>Страница, на которую вы хотели зайти устарела или не существует</li>
-              <li>Акция, ранее действовавшая на сайте, закончилась.</li>
-            </ul>
-            <p>Ничего страшного, перейдите на <a href="#">главную страницу</a> и продолжайте покупки!</p>
+        <h1 class="mb-40">Вакансии</h1>
+        <div class="vacancy">
+          <div class="vacancy__image">
+            <img src="images/vacancies/img_1.jpg" alt="Менеджер">
           </div>
-          <img width="512" height="281" src="images/page_404/page_404.svg" alt="404">
+          <div class="vacancy__description">
+            <h2><span class="vacancy__position">Менеджер</span> з/п от 40 000 <span class="rub">руб.</span></h2>
+            <p>Товарищи! рамки и место обучения кадров позволяет оценить значение существенных финансовых и административных условий. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке направлений
+              прогрессивного развития.</p>
+            <p><button class="js-vacancy-popup vacancy__button" type="button">Подать заявку</button></p>
+          </div>
+        </div>
+        <div class="vacancy">
+          <div class="vacancy__image vacancy__image--reverse">
+            <img src="images/vacancies/img_2.jpg" alt="Менеджер">
+          </div>
+          <div class="vacancy__description">
+            <h2><span class="vacancy__position">Дизайнер</span> з/п от 40 000 <span class="rub">руб.</span></h2>
+            <p>Товарищи! рамки и место обучения кадров позволяет оценить значение существенных финансовых и административных условий. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке направлений
+              прогрессивного развития.</p>
+            <p><button class="js-vacancy-popup vacancy__button" type="button">Подать заявку</button></p>
+          </div>
+        </div>
+        <div class="vacancy">
+          <div class="vacancy__image">
+            <img src="images/vacancies/img_3.jpg" alt="Менеджер">
+          </div>
+          <div class="vacancy__description">
+            <h2><span class="vacancy__position">Бухгалтер</span> з/п от 40 000 <span class="rub">руб.</span></h2>
+            <p>Товарищи! рамки и место обучения кадров позволяет оценить значение существенных финансовых и административных условий. Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке направлений
+              прогрессивного развития.</p>
+            <p><button class="js-vacancy-popup vacancy__button" type="button">Подать заявку</button></p>
+          </div>
         </div>
       </div>
     </div>
@@ -320,6 +370,50 @@
           alt="">
       </div>
     </footer>
+
+    <div class="popups-wrapper">
+      <div id="vacancy" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title">Анкета соискателя</p>
+        <form action="">
+          <label class="input-block" for="email">
+            <span class="input-block__label">Email</span>
+            <input id="email" class="input-block__input" type="text" name="email" value="">
+          </label>
+          <label class="input-block" for="name">
+            <span class="input-block__label">ФИО</span>
+            <input id="name" class="input-block__input" type="text" name="name" value="">
+          </label>
+          <label class="input-block" for="phone">
+            <span class="input-block__label">Телефон</span>
+            <input id="phone" class="input-block__input" type="text" name="phone" value="">
+          </label>
+          <label class="input-block" for="city">
+            <span class="input-block__label">Город</span>
+            <input id="city" class="input-block__input" type="text" name="city" value="">
+          </label>
+          <label class="input-block" for="exp">
+            <span class="input-block__label">Опыт работы</span>
+            <textarea id="exp" class="input-block__textarea"></textarea>
+          </label>
+          <label class="input-block" for="comment">
+            <span class="input-block__label">Комментарий</span>
+            <textarea id="comment" class="input-block__textarea"></textarea>
+          </label>
+          <label class="file-upload" for="file-upload">
+            <input class="file-upload__file" type="file">
+            Загрузить файл резюме
+          </label>
+          <div class="n-popup__button-block mt-60">
+            <button class="button button--big button--fill button--wide" type="submit">Подать заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
