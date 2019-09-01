@@ -40,6 +40,10 @@
       padding-top: 6px;
       padding-bottom: 6px;
       resize: none;
+
+      &--h120 {
+        height: 120px;
+      }
     }
   }
 
@@ -101,6 +105,14 @@
     &--fill {
       background-color: $purple;
       color: #fff;
+    }
+
+    &--fixed {
+      min-width: 224px;
+    }
+
+    &--long {
+      max-width: 448px;
     }
   }
 }

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Main catalog</title>
+  <title>Main page</title>
 
   <link href="css/base/stylesheet.css" rel="stylesheet" position="1">
   <link href="css/base/nouislider.css" rel="stylesheet" position="1">
@@ -121,6 +121,18 @@
       <symbol id="separator" viewBox="0 0 8 16">
         <path opacity=".604" d="M7 1L1 15" stroke="#C6C9D1" stroke-linecap="round"></path>
       </symbol>
+      <symbol id="icon-popup-close" viewBox="0 0 14 14">
+        <g>
+          <path fill="#7f859c" d="M11.4,13.6L0.5,2.6c-0.6-0.6-0.6-1.6,0-2.2l0,0c0.6-0.6,1.6-0.6,2.2,0l10.9,10.9c0.6,0.6,0.6,1.6,0,2.2l0,0C12.9,14.2,12,14.2,11.4,13.6z" />
+          <path fill="#7f859c" d="M0.5,11.4L11.4,0.5c0.6-0.6,1.6-0.6,2.2,0l0,0c0.6,0.6,0.6,1.6,0,2.2L2.6,13.6c-0.6,0.6-1.6,0.6-2.2,0l0,0C-0.1,13-0.1,12,0.5,11.4z" />
+        </g>
+      </symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 12 12">
+        <path d="M9.2,6.6L4,11.8c-0.3,0.3-0.9,0.3-1.2,0c-0.3-0.3-0.3-0.9,0-1.2L7.4,6L2.8,1.4c-0.3-0.3-0.3-0.9,0-1.2c0.3-0.3,0.9-0.3,1.2,0l5.3,5.2C9.4,5.6,9.5,5.8,9.5,6C9.5,6.2,9.4,6.4,9.2,6.6z" />
+      </symbol>
+      <symbol id="icon-arrow-left" viewBox="0 0 12 12">
+        <path d="M2.8,5.4L8,0.2c0.3-0.3,0.9-0.3,1.2,0c0.3,0.3,0.3,0.9,0,1.2L4.6,6l4.7,4.6c0.3,0.3,0.3,0.9,0,1.2c-0.3,0.3-0.9,0.3-1.2,0L2.8,6.6C2.6,6.4,2.5,6.2,2.5,6C2.5,5.8,2.6,5.6,2.8,5.4z" />
+      </symbol>
     </svg>
   </div>
   <div id="app">
@@ -181,7 +193,49 @@
           <li class="menu-bottom-item"><a href="#">Верхняя одежда</a></li>
           <li class="menu-bottom-item"><a href="#">Трикотаж</a></li>
           <li class="menu-bottom-item"><a href="#">Нижнее белье</a></li>
-          <li class="menu-bottom-item"><a href="#">Аксессуары</a></li>
+          <li class="menu-bottom-item">
+            <a href="#">Аксессуары</a>
+            <div class="dropdown-menu">
+              <ul class="dropdown-menu__inner">
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">
+                    <img src="images/main_page/img_1.jpg" alt="">
+                    <span class="dropdown-menu__link-title">Перчатки</span>
+                  </a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">
+                    <img src="images/main_page/img_1.jpg" alt="">
+                    <span class="dropdown-menu__link-title">варежки</span>
+                  </a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">
+                    <img src="images/main_page/img_1.jpg" alt="">
+                    <span class="dropdown-menu__link-title">Сумки</span>
+                  </a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">
+                    <img src="images/main_page/img_1.jpg" alt="">
+                    <span class="dropdown-menu__link-title">Ремни</span>
+                  </a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">
+                    <img src="images/main_page/img_1.jpg" alt="">
+                    <span class="dropdown-menu__link-title">кошельки</span>
+                  </a>
+                </li>
+                <li class="dropdown-menu__item">
+                  <a class="dropdown-menu__link" href="#">
+                    <img src="images/main_page/img_1.jpg" alt="">
+                    <span class="dropdown-menu__link-title">бижутерия</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
           <li class="menu-bottom-item"><a href="#">Бижутерия</a></li>
           <li class="menu-bottom-item"><a href="#">Блузки</a></li>
           <li class="menu-bottom-item"><a href="#">Сумки</a></li>
@@ -193,87 +247,138 @@
     <div class="alert-holder" style="display: none;">
       <div class="alert"><span></span> <a href="#">×</a></div>
     </div>
-    <div class="container">
-      <div class="breadcrumb">
-        <ul class="breadcrumb-holder">
-          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Главная</a></li>
-          <li class="breadcrumb-item">
-            <span class="breadcrumb-separator">
-              <svg>
-                <use xlink:href="#separator"></use>
-              </svg>
-            </span>
-          </li>
-          <li class="breadcrumb-item">
-            <span class="breadcrumb-last">
-              Каталог
-            </span>
-          </li>
-          <li class="breadcrumb-item"></li>
-        </ul>
-      </div>
-    </div>
     <div class="main">
-      <div class="container">
-        <div class="catalog-main">
-          <div class="catalog-main__row">
-            <div class="catalog-main__cell">
-              <a class="catalog-main__link" href="#">
-                <img src="images/main_catalog/img_1.png" alt="">
-                <span class="catalog-main__link-title">аксессуары</span>
+      <div class="main-slider">
+        <div class="main-slider__list">
+          <div class="main-slider__slide main-slider__slide--dark">
+            <img src="images/main_page/img_2.jpg" alt="">
+            <div class="main-slider__slide-inner">
+              <p class="main-slider__slide-subtitle">новая коллекция</p>
+              <p class="main-slider__slide-title" style="max-width: 630px"><span>ТЁПЛАЯ</span><span class="text-right">ВЕСНА 2019</span></p>
+              <p class="text-center">
+                <a class="main-slider__slide-button" href="#">ПЕРЕЙТИ</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__controls">
+          <button class="main-slider__button" type="button">
+            <svg class="main-slider__button-icon">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <div class="main-slider__progress-bar">
+            <div class="main-slider__progress" style="width: 33.333%"></div>
+          </div>
+          <button class="main-slider__button" type="button">
+            <svg class="main-slider__button-icon">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="container container--1440">
+        <div class="catalog-grid">
+          <div class="catalog-grid__row">
+            <div class="catalog-grid__cell col-6">
+              <a class="catalog-grid__link" href="#">
+                <img src="images/main_page/img_3.jpg" alt="">
+                <span class="catalog-grid__link-title catalog-grid__link-title--type_2">НОВИНКИ</span>
               </a>
             </div>
-            <div class="catalog-main__cell">
-              <a class="catalog-main__link" href="#">
-                <img src="images/main_catalog/img_1.png" alt="">
-                <span class="catalog-main__link-title">Трикотаж</span>
-              </a>
-            </div>
-            <div class="catalog-main__cell">
-              <a class="catalog-main__link" href="#">
-                <img src="images/main_catalog/img_1.png" alt="">
-                <span class="catalog-main__link-title">сумки</span>
+            <div class="catalog-grid__cell col-6">
+              <a class="catalog-grid__link" href="#">
+                <img src="images/main_page/img_4.jpg" alt="">
+                <span class="catalog-grid__link-title catalog-grid__link-title--type_3">АКЦИИ</span>
               </a>
             </div>
           </div>
-          <div class="catalog-main__row">
-            <div class="catalog-main__cell">
-              <a class="catalog-main__link" href="#">
-                <img src="images/main_catalog/img_2.png" alt="">
-                <span class="catalog-main__link-title">Платья</span>
+        </div>
+      </div>
+      <div class="banner banner--faded">
+        <img src="images/main_page/img_5.jpg" alt="">
+        <div class="banner__inner">
+          <p class="banner__title">КАПСУЛЬНЫЙ ГАРДЕРОБ</p>
+          <p class="banner__button-block">
+            <a class="banner__button" href="#">ПЕРЕЙТИ</a>
+          </p>
+        </div>
+      </div>
+      <div class="container container--1440 mb-75">
+        <div class="catalog-grid">
+          <div class="catalog-grid__row">
+            <div class="catalog-grid__cell col-4">
+              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
+                <img src="images/main_page/img_6.jpg" alt="">
+                <span class="catalog-grid__link-title">Нижнее белье</span>
               </a>
             </div>
-            <div class="catalog-main__cell">
-              <a class="catalog-main__link" href="#">
-                <img src="images/main_catalog/img_3.png" alt="">
-                <span class="catalog-main__link-title">верхняя одежда</span>
+            <div class="catalog-grid__cell col-4">
+              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
+                <img src="images/main_page/img_7.jpg" alt="">
+                <span class="catalog-grid__link-title">бижутерия</span>
+              </a>
+            </div>
+            <div class="catalog-grid__cell col-4">
+              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
+                <img src="images/main_page/img_8.jpg" alt="">
+                <span class="catalog-grid__link-title">Блузки</span>
               </a>
             </div>
           </div>
-          <div class="catalog-main__row">
-            <div class="catalog-main__cell">
-              <a class="catalog-main__link" href="#">
-                <img src="images/main_catalog/img_4.png" alt="">
-                <span class="catalog-main__link-title">Нижнее белье</span>
+          <div class="catalog-grid__row">
+            <div class="catalog-grid__cell col-4">
+              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
+                <img src="images/main_page/img_9.jpg" alt="">
+                <span class="catalog-grid__link-title">Нижнее белье</span>
               </a>
             </div>
-            <div class="catalog-main__cell">
-              <a class="catalog-main__link" href="#">
-                <img src="images/main_catalog/img_1.png" alt="">
-                <span class="catalog-main__link-title">бижутерия</span>
+            <div class="catalog-grid__cell col-4">
+              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
+                <img src="images/main_page/img_10.jpg" alt="">
+                <span class="catalog-grid__link-title">бижутерия</span>
               </a>
             </div>
-            <div class="catalog-main__cell">
-              <a class="catalog-main__link" href="#">
-                <img src="images/main_catalog/img_4.png" alt="">
-                <span class="catalog-main__link-title">Блузки</span>
+            <div class="catalog-grid__cell col-4">
+              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
+                <img src="images/main_page/img_11.jpg" alt="">
+                <span class="catalog-grid__link-title">Блузки</span>
               </a>
             </div>
           </div>
-          <div class="catalog-main__description">
-            <h1>Заголовок</h1>
-            <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а
-              также начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</p>
+        </div>
+      </div>
+      <div class="container mb-100">
+        <h2 class="text-center mb-100">ЛИДЕРЫ ПРОДАЖ</h2>
+        <div class="features">
+          <div class="features__inner">
+            <div class="features__item">
+              <div class="feature">
+                <div class="feature__image">
+                  <img src="images/main_page/feature_1.svg" alt="">
+                </div>
+                <p class="feature__title">Качество</p>
+                <p class="feature__text">И нет сомнений, что ключевые особенности структуры проекта преданы социально-демократической анафеме.</p>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="feature">
+                <div class="feature__image">
+                  <img src="images/main_page/feature_2.svg" alt="">
+                </div>
+                <p class="feature__title">Практичность</p>
+                <p class="feature__text">Безусловно, экономическая повестка сегодняшнего дня играет важную роль в формировании поставленных задач.</p>
+              </div>
+            </div>
+            <div class="features__item">
+              <div class="feature">
+                <div class="feature__image">
+                  <img src="images/main_page/feature_3.svg" alt="">
+                </div>
+                <p class="feature__title">Ассортимент</p>
+                <p class="feature__text">В своем стремлении повысить качество жизни, они забывают, что внедрение современных методик требует определения.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -384,6 +489,7 @@
       </div>
     </footer>
   </div>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 

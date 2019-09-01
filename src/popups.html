@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Popups</title>
+
+  //= template/style.html
+</head>
+
+<body class="front">
+  //= template/svg.html
+  <div id="app">
+    //= template/header.html
+    //= template/menu_second_level.html
+    //= template/alert-holder.html
+    <div class="main">
+      <div class="container mt-50">
+        <p class="mb-20"><button class="js-popup-open button button--fill" type="button" data-popup="login">log in</button></p>
+        <p class="mb-20"><button class="js-popup-open button button--fill" type="button" data-popup="b2c_reg">b2c register</button></p>
+        <p class="mb-20"><button class="js-popup-open button button--fill" type="button" data-popup="recover_1">recover</button></p>
+        <p class="mb-20"><button class="js-popup-open button button--fill" type="button" data-popup="recover_2">recover 2</button></p>
+        <p class="mb-20"><button class="js-popup-open button button--fill" type="button" data-popup="form_size_1">form size 1</button></p>
+        <p class="mb-20"><button class="js-popup-open button button--fill" type="button" data-popup="form_size_2">form size 2</button></p>
+        <p><button class="js-popup-open button button--fill" type="button" data-popup="b2b_reg">b2b register</button></p>
+      </div>
+    </div>
+    //= template/footer.html
+
+    //= template/popups.html
+  </div>
+  //= template/scripts.html
+</body>
+
+</html>

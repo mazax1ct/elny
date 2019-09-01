@@ -1,0 +1,48 @@
+.front {
+  .fav-sizes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fav-size {
+    align-items: center;
+    border-radius: 18px;
+    background-color: rgba($purple, 0.2);
+    border: 1px solid rgba($purple, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    height: 67px;
+    margin: 2px;
+    position: relative;
+    padding: 0;
+    transition: all 0.3s;
+    width: 36px;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($purple, 0.4);
+    }
+
+    &.is-active {
+      background: none;
+      border-color: $purple;
+      color: $purple;
+
+      &::after {
+        background: url('../images/fav-sizes/fav-size_is-active.svg') no-repeat 0 0 transparent;
+        bottom: 4px;
+        content: '';
+        height: 16px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        top: auto;
+        width: 16px;
+      }
+    }
+  }
+}
