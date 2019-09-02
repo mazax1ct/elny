@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Thanks</title>
+  <title>B2C Account History 1</title>
 
   <link href="css/base/reset.css" rel="stylesheet" position="1">
   <link href="css/base/grid.css" rel="stylesheet" position="1">
@@ -247,15 +247,111 @@
     <div class="alert-holder" style="display: none;">
       <div class="alert"><span></span> <a href="#">×</a></div>
     </div>
+    <div class="container">
+      <div class="breadcrumb">
+        <ul class="breadcrumb-holder">
+          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Главная</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Личный кабинет</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-last">
+              История заказов
+            </span>
+          </li>
+          <li class="breadcrumb-item"></li>
+        </ul>
+      </div>
+    </div>
     <div class="main">
       <div class="container">
-        <div class="thanks">
-          <div class="thanks__image-block">
-            <img width="411" height="229" src="images/thanks/thanks.svg" alt="Спасибо">
+        <h1 class="mb-30">История заказов</h1>
+        <ul class="tabs-nav">
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="#">Личный кабинет</a></li>
+          <li class="tabs-nav__item"><a class="tabs-nav__link is-active" href="#">История заказов</a></li>
+        </ul>
+        <h2 class="h3 mb-15">Заказов: 3</h2>
+        <div class="orders-history">
+          <div class="orders-history__title">
+            <a class="orders-history__cell" href="#">
+              <span class="nowrap">Заказ<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Дата <span class="nowrap">заказа<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Способ <span class="nowrap">доставки<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              <span class="nowrap">Статус<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Стоимость<br> <span class="nowrap">доставки <span class="rub">руб.</span> <svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Общая <span class="nowrap">скидка<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Итоговая <span class="nowrap">сумма <span class="rub">руб.</span><svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <div class="orders-history__cell">Способ <span class="nowrap">оплаты <span class="rub">руб.</span></span></div>
           </div>
-          <h1>Спасибо!</h1>
-          <p>Ваш заказ <a href="#">№ <span class="bolder">167367</span></a> принят в обработку. В ближайшее время с вами свяжется наш оператор для подтверждения заказа.</p>
-          <p><a class="bolder" href="#">Перейти на главную</a></p>
+          <a class="orders-history__item" href="#">
+            <span class="orders-history__cell">№167869</span>
+            <span class="orders-history__cell">12.12.2019</span>
+            <span class="orders-history__cell">Самовывоз из магазина</span>
+            <span class="orders-history__cell">Новый</span>
+            <span class="orders-history__cell"><span class="nowrap">0 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">400 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">12 000 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell">Наличные</span>
+          </a>
+          <a class="orders-history__item" href="#">
+            <span class="orders-history__cell">№167868</span>
+            <span class="orders-history__cell">12.11.2019</span>
+            <span class="orders-history__cell">Пункт выдачи СДЭК</span>
+            <span class="orders-history__cell">Закрыт</span>
+            <span class="orders-history__cell"><span class="nowrap">450 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">400 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">15 000 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell">Наличные</span>
+          </a>
+          <a class="orders-history__item" href="#">
+            <span class="orders-history__cell">№167867</span>
+            <span class="orders-history__cell">12.10.2019</span>
+            <span class="orders-history__cell">Курьером до адреса</span>
+            <span class="orders-history__cell">Закрыт</span>
+            <span class="orders-history__cell"><span class="nowrap">1200 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">400 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">12 000 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell">Наличные</span>
+          </a>
         </div>
       </div>
     </div>
@@ -364,6 +460,310 @@
           alt="">
       </div>
     </footer>
+
+    <div class="popups-wrapper">
+      <div id="vacancy" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Анкета соискателя</p>
+        <form action="">
+          <label class="input-block" for="email">
+            <span class="input-block__label">Email</span>
+            <input id="email" class="input-block__input" type="text" name="email" value="">
+          </label>
+          <label class="input-block" for="name">
+            <span class="input-block__label">ФИО</span>
+            <input id="name" class="input-block__input" type="text" name="name" value="">
+          </label>
+          <label class="input-block" for="phone">
+            <span class="input-block__label">Телефон</span>
+            <input id="phone" class="input-block__input" type="text" name="phone" value="">
+          </label>
+          <label class="input-block" for="city">
+            <span class="input-block__label">Город</span>
+            <input id="city" class="input-block__input" type="text" name="city" value="">
+          </label>
+          <label class="input-block" for="exp">
+            <span class="input-block__label">Опыт работы</span>
+            <textarea id="exp" class="input-block__textarea"></textarea>
+          </label>
+          <label class="input-block" for="comment">
+            <span class="input-block__label">Комментарий</span>
+            <textarea id="comment" class="input-block__textarea"></textarea>
+          </label>
+          <label class="file-upload" for="file-upload">
+            <input class="file-upload__file" type="file">
+            Загрузить файл резюме
+          </label>
+          <div class="n-popup__button-block mt-60">
+            <button class="button button--h50 button--fill button--wide" type="submit">Подать заявку</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="login" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Вход</p>
+        <form action="">
+          <label class="input-block" for="login">
+            <span class="input-block__label">Email или номер телефона</span>
+            <input id="login" class="input-block__input" type="text" name="login" value="">
+          </label>
+          <label class="input-block" for="pass">
+            <span class="input-block__label">Пароль</span>
+            <input id="pass" class="input-block__input" type="password" name="pass" value="">
+          </label>
+          <p class="n-popup__forgot"><a href="#">Забыли пароль?</a></p>
+          <div class="n-popup__button-block n-popup__button-block--two_btn mb-40">
+            <button class="button" type="button">Регистрация</button>
+            <button class="button button--fill" type="submit">Войти</button>
+          </div>
+          <div class="social-block">
+            <p class="social-block__title">Авторизуйтесь в один клик</p>
+            <div class="social-block__list">
+              <a class="social-link" href="#">
+                <img src="images/tw.png" alt="twitter.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/gg.png" alt="googleplus.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/fb.png" alt="facebook.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/ok.png" alt="ok.ru">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/vk.png" alt="vk.com">
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+      <div id="b2c_reg" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Регистрация</p>
+        <form action="">
+          <label class="input-block" for="email_2">
+            <span class="input-block__label">Email</span>
+            <input id="email_2" class="input-block__input" type="text" name="email_2" value="">
+          </label>
+          <label class="input-block" for="name_2">
+            <span class="input-block__label">ФИО</span>
+            <input id="name_2" class="input-block__input" type="text" name="name_2" value="">
+          </label>
+          <label class="input-block" for="phone_2">
+            <span class="input-block__label">Телефон</span>
+            <input id="phone_2" class="input-block__input" type="text" name="phone_2" value="">
+          </label>
+          <div class="n-popup__button-block text-center mb-40 mt-40">
+            <button class="button button--fill button--minw_224" type="button">Зарегестрироваться</button>
+          </div>
+          <div class="social-block">
+            <p class="social-block__title">Зарегестрируйтесь в один клик</p>
+            <div class="social-block__list">
+              <a class="social-link" href="#">
+                <img src="images/tw.png" alt="twitter.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/gg.png" alt="googleplus.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/fb.png" alt="facebook.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/ok.png" alt="ok.ru">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/vk.png" alt="vk.com">
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+      <div id="recover_1" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Восстановление пароля</p>
+        <form action="">
+          <label class="input-block" for="email_3">
+            <span class="input-block__label">Email</span>
+            <input id="email_3" class="input-block__input" type="text" name="email_3" value="">
+          </label>
+          <div class="n-popup__button-block text-center mt-40">
+            <button class="button button--fill button--minw_224" type="button">Выслать пароль</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="recover_2" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Восстановление пароля</p>
+        <form action="">
+          <p class="n-popup__text mb-60">Новый пароль отправлен на почту.</p>
+          <div class="n-popup__button-block text-center mt-40">
+            <button class="js-popup-close button button--fill button--minw_224" type="button">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="form_size_1" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <form action="">
+          <p class="n-popup__text mb-20">Вас интересует размер которого нет?<br> Нажмите на размер, чтобы добавить его в избранные. Когда нужный вам размер появиться в наличии мы обязательно вас известим по электронной почте!</p>
+          <div class="fav-sizes mb-15">
+            <button class="fav-size" type="button">46</button>
+            <button class="fav-size" type="button">48</button>
+            <button class="fav-size" type="button">50</button>
+            <button class="fav-size is-active" type="button">52</button>
+          </div>
+          <div class="n-popup__button-block text-center">
+            <button class="button button--fill button--minw_224" type="button">Оставить заявку</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="form_size_2" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <form action="">
+          <p class="n-popup__text mb-30 max-width-340">Когда появится нужный размер %Название товара% - мы уведомим ваc по электронной почте.</p>
+          <div class="n-popup__button-block text-center">
+            <button class="js-popup-close button button--fill button--minw_224" type="button">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="b2b_reg" class="n-popup n-popup--big">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Регистрация</p>
+        <form action="">
+          <div class="n-popup__row">
+            <div class="n-popup__column">
+              <label class="input-block" for="email_4">
+                <span class="input-block__label">Email</span>
+                <input id="email_4" class="input-block__input" type="text" name="email_4" value="">
+              </label>
+              <label class="input-block" for="phone_3">
+                <span class="input-block__label">Телефон</span>
+                <input id="phone_3" class="input-block__input" type="text" name="phone_3" value="">
+              </label>
+              <label class="input-block" for="name_3">
+                <span class="input-block__label">ФИО</span>
+                <input id="name_3" class="input-block__input" type="text" name="name_3" value="">
+              </label>
+              <label class="input-block" for="place">
+                <span class="input-block__label">Должность</span>
+                <input id="place" class="input-block__input" type="text" name="place" value="">
+              </label>
+              <label class="input-block" for="company">
+                <span class="input-block__label">Полное название организации</span>
+                <input id="company" class="input-block__input" type="text" name="company" value="">
+              </label>
+              <label class="input-block" for="address">
+                <span class="input-block__label">Полное название организации</span>
+                <textarea id="address" class="input-block__textarea input-block__textarea--h120"></textarea>
+              </label>
+            </div>
+            <div class="n-popup__column">
+              <label class="input-block" for="inn">
+                <span class="input-block__label">ИНН</span>
+                <input id="inn" class="input-block__input" type="text" name="inn" value="">
+              </label>
+              <label class="input-block" for="kpp">
+                <span class="input-block__label">КПП</span>
+                <input id="kpp" class="input-block__input" type="text" name="kpp" value="">
+              </label>
+              <label class="input-block" for="ogrn">
+                <span class="input-block__label">ОГРН</span>
+                <input id="ogrn" class="input-block__input" type="text" name="ogrn" value="">
+              </label>
+              <label class="input-block" for="bik">
+                <span class="input-block__label">БИК</span>
+                <input id="bik" class="input-block__input" type="text" name="bik" value="">
+              </label>
+              <label class="input-block" for="bank">
+                <span class="input-block__label">Название банка</span>
+                <input id="bank" class="input-block__input" type="text" name="bank" value="">
+              </label>
+              <label class="input-block" for="ks">
+                <span class="input-block__label">Корреспондентский счет</span>
+                <input id="ks" class="input-block__input" type="text" name="ks" value="">
+              </label>
+              <label class="input-block" for="rs">
+                <span class="input-block__label">Рассчетный счет</span>
+                <input id="rs" class="input-block__input" type="text" name="rs" value="">
+              </label>
+            </div>
+          </div>
+          <div class="n-popup__button-block text-center mt-45">
+            <button class="button button--fill button--wide button--maxw_448" type="button">Зарегестрироваться</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="save-b2c" class="n-popup n-popup--small n-popup--v_align_center">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title mb-25">Введите код из смс</p>
+        <form action="">
+          <label class="input-block" for="sms_code">
+            <input id="sms_code" class="input-block__input" type="text" name="sms_code" value="">
+          </label>
+          <div class="n-popup__button-block mt-25">
+            <button class="js-popup-open button button--wide button--fill" type="submit" data-popup="save-b2c_2">Подтвердить</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="save-b2c_2" class="n-popup n-popup--small n-popup--v_align_center">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title mb-25">Код введен успешно!</p>
+        <form action="">
+          <div class="n-popup__button-block">
+            <button class="js-popup-close button button--wide button--fill" type="submit">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>

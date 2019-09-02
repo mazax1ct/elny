@@ -1,0 +1,33 @@
+.front {
+  .account-grid {
+    overflow: hidden;
+
+    &__row {
+      display: flex;
+      margin-left: -24px;
+      margin-right: -24px;
+      margin-bottom: 65px;
+    }
+
+    &__item {
+      padding-left: 24px;
+      padding-right: 24px;
+
+      &:first-child {
+        width: 35.46%
+      }
+
+      &:nth-child(2) {
+        width: 30.625%
+      }
+
+      &:nth-child(3) {
+        width: 33.915%
+      }
+    }
+
+    &__button-block {
+      text-align: center;
+    }
+  }
+}

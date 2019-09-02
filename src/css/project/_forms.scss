@@ -8,11 +8,45 @@
     }
 
     &__label {
-      display: block;
+      display: inline-block;
       font-size: 16px;
       font-weight: 500;
       line-height: 18px;
       margin-bottom: 5px;
+
+      &--verified {
+        display: inline-block;
+        position: relative;
+        padding-right: 27px;
+
+        &::after {
+          background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8729 5.92581C12.9547 6.00754 12.9141 6.08927 12.8729 6.171L7.39696 11.647C7.31523 11.7287 7.11058 11.8516 6.90658 11.8516C6.74311 11.8516 6.62019 11.8104 6.45673 11.647L4.16827 9.3585C4.08654 9.27677 4.08654 9.19504 4.16827 9.11331L4.86331 8.37773C4.9045 8.33654 4.94504 8.33654 4.98623 8.33654C5.02742 8.33654 5.06796 8.33654 5.10915 8.37773L6.90723 10.217L11.8928 5.19023C11.934 5.14904 11.9745 5.14904 12.0157 5.14904C12.0569 5.14904 12.0975 5.14904 12.1387 5.19023L12.8729 5.92581ZM8.5 1.14423C6.53846 1.14423 4.69919 1.921 3.30977 3.31042C1.92035 4.69985 1.14358 6.53911 1.14358 8.50065C1.14358 10.4622 1.92035 12.3015 3.30977 13.6909C4.69919 15.0803 6.53846 15.8571 8.5 15.8571C10.4615 15.8571 12.3008 15.0803 13.6902 13.6909C15.0797 12.3015 15.8564 10.4622 15.8564 8.50065C15.8564 6.53911 15.0797 4.69985 13.6902 3.31042C12.3008 1.921 10.4615 1.14423 8.5 1.14423ZM8.5 0C13.1998 0 17 3.80081 17 8.5C17 13.1992 13.1992 17 8.5 17C3.80081 17 0 13.1992 0 8.5C0 3.80081 3.80081 0 8.5 0Z' fill='%2327AE60'/%3E%3C/svg%3E%0A");
+          content: '';
+          height: 17px;
+          left: auto;
+          position: absolute;
+          right: 0;
+          top: 2px;
+          width: 17px;
+        }
+      }
+    }
+
+    &__label-block {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+
+      .input-block__label {
+        margin-bottom: 0;
+      }
+    }
+
+    &__verify {
+      color: #EB5757;
+      font-size: 12px;
+      text-decoration: underline;
     }
 
     &__input,
@@ -40,6 +74,10 @@
       padding-top: 6px;
       padding-bottom: 6px;
       resize: none;
+
+      &--h54 {
+        height: 54px;
+      }
 
       &--h120 {
         height: 120px;
@@ -93,8 +131,9 @@
     padding: 0 10px;
     text-transform: uppercase;
     text-align: center;
+    transition: all 0.3s;
 
-    &--big {
+    &--h50 {
       height: 50px;
     }
 
@@ -107,12 +146,37 @@
       color: #fff;
     }
 
-    &--fixed {
+    &--faded {
+      border-color: #ABAFBA;
+      color: #ABAFBA;
+
+      &:hover,
+      &:focus {
+        border-color: $purple;
+        color: $purple;
+      }
+    }
+
+    &--minw_160 {
+      min-width: 160px;
+    }
+
+    &--minw_224 {
       min-width: 224px;
     }
 
-    &--long {
+    &--maxw_280 {
+      max-width: 280px;
+    }
+
+    &--maxw_448 {
       max-width: 448px;
     }
+  }
+
+  a.button {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
   }
 }

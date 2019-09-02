@@ -1,15 +1,16 @@
 $(document).ready(function () {
-  //открытие попапа вакансий
+  //открытие попапа
   $('.js-popup-open').click(function () {
-    $('body').toggleClass('overflow');
+    $('body').addClass('overflow');
     $('.popups-wrapper').fadeIn();
+    $('.n-popup').hide();
     $('#' + $(this).attr('data-popup')).fadeIn();
     return false;
   });
 
   //закрытие попапа
   $('.js-popup-close').click(function () {
-    $('body').toggleClass('overflow');
+    $('body').removeClass('overflow');
     $('.n-popup').fadeOut();
     $('.popups-wrapper').fadeOut();
     return false;

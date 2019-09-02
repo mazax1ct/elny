@@ -7,12 +7,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Main page</title>
+  <title>B2C Account</title>
 
-  <link href="css/base/stylesheet.css" rel="stylesheet" position="1">
-  <link href="css/base/nouislider.css" rel="stylesheet" position="1">
-  <link href="css/base/slimselect.css" rel="stylesheet" position="1">
-  <link href="css/base/tiny-slider.css" rel="stylesheet" position="1">
   <link href="css/base/reset.css" rel="stylesheet" position="1">
   <link href="css/base/grid.css" rel="stylesheet" position="1">
   <link href="css/base/scrollbar.css" rel="stylesheet" position="1">
@@ -133,6 +129,10 @@
       <symbol id="icon-arrow-left" viewBox="0 0 12 12">
         <path d="M2.8,5.4L8,0.2c0.3-0.3,0.9-0.3,1.2,0c0.3,0.3,0.3,0.9,0,1.2L4.6,6l4.7,4.6c0.3,0.3,0.3,0.9,0,1.2c-0.3,0.3-0.9,0.3-1.2,0L2.8,6.6C2.6,6.4,2.5,6.2,2.5,6C2.5,5.8,2.6,5.6,2.8,5.4z" />
       </symbol>
+      <symbol id="icon-acs-desc" viewBox="0 0 15 15">
+        <path d="M4.09196 1.02477L4.03711 13.0247M4.03711 13.0247L7.03711 8.52466M4.03711 13.0247L1.03733 8.52467" stroke="#ECDEDE" />
+        <path d="M11.5437 14.0247L11.4992 2.02472M11.4992 2.02472L8.53656 6.5494M11.4992 2.02472L14.5361 6.49973" stroke="#ECDEDE" />
+      </symbol>
     </svg>
   </div>
   <div id="app">
@@ -155,7 +155,7 @@
         <div class="header-element search-container-wrapper">
           <div class="search-container ">
             <div class="search-container-image">
-              <img src="index_files/search.png" alt="">
+              <img src="images/search.png" alt="">
             </div>
             <input type="text" class="search-input">
           </div>
@@ -247,139 +247,230 @@
     <div class="alert-holder" style="display: none;">
       <div class="alert"><span></span> <a href="#">×</a></div>
     </div>
+    <div class="container">
+      <div class="breadcrumb">
+        <ul class="breadcrumb-holder">
+          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Главная</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-last">
+              Личный кабинет
+            </span>
+          </li>
+          <li class="breadcrumb-item"></li>
+        </ul>
+      </div>
+    </div>
     <div class="main">
-      <div class="main-slider">
-        <div class="main-slider__list">
-          <div class="main-slider__slide main-slider__slide--dark">
-            <img src="images/main_page/img_2.jpg" alt="">
-            <div class="main-slider__slide-inner">
-              <p class="main-slider__slide-subtitle">новая коллекция</p>
-              <p class="main-slider__slide-title" style="max-width: 630px"><span>ТЁПЛАЯ</span><span class="text-right">ВЕСНА 2019</span></p>
-              <p class="text-center">
-                <a class="main-slider__slide-button" href="#">ПЕРЕЙТИ</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="main-slider__controls">
-          <button class="main-slider__button" type="button">
-            <svg class="main-slider__button-icon">
-              <use xlink:href="#icon-arrow-left"></use>
-            </svg>
-          </button>
-          <div class="main-slider__progress-bar">
-            <div class="main-slider__progress" style="width: 33.333%"></div>
-          </div>
-          <button class="main-slider__button" type="button">
-            <svg class="main-slider__button-icon">
-              <use xlink:href="#icon-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="container container--1440">
-        <div class="catalog-grid">
-          <div class="catalog-grid__row">
-            <div class="catalog-grid__cell col-6">
-              <a class="catalog-grid__link" href="#">
-                <img src="images/main_page/img_3.jpg" alt="">
-                <span class="catalog-grid__link-title catalog-grid__link-title--type_2">НОВИНКИ</span>
-              </a>
-            </div>
-            <div class="catalog-grid__cell col-6">
-              <a class="catalog-grid__link" href="#">
-                <img src="images/main_page/img_4.jpg" alt="">
-                <span class="catalog-grid__link-title catalog-grid__link-title--type_3">АКЦИИ</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="banner banner--faded">
-        <img src="images/main_page/img_5.jpg" alt="">
-        <div class="banner__inner">
-          <p class="banner__title">КАПСУЛЬНЫЙ ГАРДЕРОБ</p>
-          <p class="banner__button-block">
-            <a class="banner__button" href="#">ПЕРЕЙТИ</a>
-          </p>
-        </div>
-      </div>
-      <div class="container container--1440 mb-75">
-        <div class="catalog-grid">
-          <div class="catalog-grid__row">
-            <div class="catalog-grid__cell col-4">
-              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
-                <img src="images/main_page/img_6.jpg" alt="">
-                <span class="catalog-grid__link-title">Нижнее белье</span>
-              </a>
-            </div>
-            <div class="catalog-grid__cell col-4">
-              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
-                <img src="images/main_page/img_7.jpg" alt="">
-                <span class="catalog-grid__link-title">бижутерия</span>
-              </a>
-            </div>
-            <div class="catalog-grid__cell col-4">
-              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
-                <img src="images/main_page/img_8.jpg" alt="">
-                <span class="catalog-grid__link-title">Блузки</span>
-              </a>
-            </div>
-          </div>
-          <div class="catalog-grid__row">
-            <div class="catalog-grid__cell col-4">
-              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
-                <img src="images/main_page/img_9.jpg" alt="">
-                <span class="catalog-grid__link-title">Нижнее белье</span>
-              </a>
-            </div>
-            <div class="catalog-grid__cell col-4">
-              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
-                <img src="images/main_page/img_10.jpg" alt="">
-                <span class="catalog-grid__link-title">бижутерия</span>
-              </a>
-            </div>
-            <div class="catalog-grid__cell col-4">
-              <a class="catalog-grid__link catalog-grid__link--faded" href="#">
-                <img src="images/main_page/img_11.jpg" alt="">
-                <span class="catalog-grid__link-title">Блузки</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container mb-100">
-        <h2 class="text-center mb-100">ЛИДЕРЫ ПРОДАЖ</h2>
-        <div class="features">
-          <div class="features__inner">
-            <div class="features__item">
-              <div class="feature">
-                <div class="feature__image">
-                  <img src="images/main_page/feature_1.svg" alt="">
+      <div class="container">
+        <h1 class="mb-30">Личный кабинет</h1>
+        <ul class="tabs-nav">
+          <li class="tabs-nav__item"><a class="tabs-nav__link is-active" href="#">Личный кабинет</a></li>
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="#">История заказов</a></li>
+        </ul>
+        <div class="account-grid">
+          <form method="get" action="">
+            <div class="account-grid__row">
+              <div class="account-grid__item">
+                <label class="input-block" for="email_5">
+                  <span class="input-block__label">Email</span>
+                  <input id="email_5" class="input-block__input" type="text" name="email_5" value="">
+                </label>
+                <label class="input-block" for="name_4">
+                  <span class="input-block__label">Ваше имя</span>
+                  <input id="name_4" class="input-block__input" type="text" name="name_4" value="">
+                </label>
+                <label class="input-block" for="phone_4">
+                  <span class="input-block__label-block">
+                    <span class="input-block__label">Телефон</span>
+                    <a class="js-popup-open input-block__verify" href="javascript:void(0)" data-popup="save-b2c">Подтвердить номер телефона</a>
+                  </span>
+                  <input id="phone_4" class="input-block__input" type="text" name="phone_4" value="">
+                </label>
+                <label class="input-block" for="city_2">
+                  <span class="input-block__label input-block__label--verified">Город</span>
+                  <input id="city_2" class="input-block__input" type="text" name="city_2" value="">
+                </label>
+                <label class="input-block" for="address_2">
+                  <span class="input-block__label">Адрес</span>
+                  <textarea id="address_2" class="input-block__textarea input-block__textarea--h54">г. Санкт-Петербург, ул. Ленинский пр-т, д.209/5</textarea>
+                </label>
+              </div>
+              <div class="account-grid__item">
+                <label class="input-block" for="old_pass">
+                  <span class="input-block__label">Старый пароль</span>
+                  <input id="old_pass" class="input-block__input" type="password" name="old_pass" value="">
+                </label>
+                <label class="input-block" for="new_pass">
+                  <span class="input-block__label">Новый пароль</span>
+                  <input id="new_pass" class="input-block__input" type="password" name="new_pass" value="">
+                </label>
+                <label class="input-block" for="re_new_pass">
+                  <span class="input-block__label">Повторите новый пароль</span>
+                  <input id="re_new_pass" class="input-block__input" type="password" name="re_new_pass" value="">
+                </label>
+              </div>
+              <div class="account-grid__item">
+                <div class="sizes-list">
+                  <p class="sizes-list__title">Укажите размер для платья</p>
+                  <div class="sizes-list__list">
+                    <label class="size-checkbox" for="size_1">
+                      <input id="size_1" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">42</span>
+                    </label>
+                    <label class="size-checkbox" for="size_2">
+                      <input id="size_2" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">44</span>
+                    </label>
+                    <label class="size-checkbox" for="size_3">
+                      <input id="size_3" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">46</span>
+                    </label>
+                    <label class="size-checkbox" for="size_4">
+                      <input id="size_4" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">48</span>
+                    </label>
+                    <label class="size-checkbox" for="size_5">
+                      <input id="size_5" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">50</span>
+                    </label>
+                    <label class="size-checkbox" for="size_6">
+                      <input id="size_6" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">52</span>
+                    </label>
+                    <label class="size-checkbox" for="size_7">
+                      <input id="size_7" type="checkbox" name="size" value="" checked>
+                      <span class="size-checkbox__text">54</span>
+                    </label>
+                    <label class="size-checkbox" for="size_8">
+                      <input id="size_8" type="checkbox" name="size" value="" checked>
+                      <span class="size-checkbox__text">56</span>
+                    </label>
+                  </div>
                 </div>
-                <p class="feature__title">Качество</p>
-                <p class="feature__text">И нет сомнений, что ключевые особенности структуры проекта преданы социально-демократической анафеме.</p>
+                <div class="sizes-list">
+                  <p class="sizes-list__title">Укажите размер для штанов</p>
+                  <div class="sizes-list__list">
+                    <label class="size-checkbox" for="size_11">
+                      <input id="size_11" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">42</span>
+                    </label>
+                    <label class="size-checkbox" for="size_21">
+                      <input id="size_21" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">44</span>
+                    </label>
+                    <label class="size-checkbox" for="size_31">
+                      <input id="size_31" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">46</span>
+                    </label>
+                    <label class="size-checkbox" for="size_41">
+                      <input id="size_41" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">48</span>
+                    </label>
+                    <label class="size-checkbox" for="size_51">
+                      <input id="size_51" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">50</span>
+                    </label>
+                    <label class="size-checkbox" for="size_61">
+                      <input id="size_61" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">52</span>
+                    </label>
+                    <label class="size-checkbox" for="size_71">
+                      <input id="size_71" type="checkbox" name="size" value="" checked>
+                      <span class="size-checkbox__text">54</span>
+                    </label>
+                    <label class="size-checkbox" for="size_81">
+                      <input id="size_81" type="checkbox" name="size" value="" checked>
+                      <span class="size-checkbox__text">56</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="sizes-list">
+                  <p class="sizes-list__title">Укажите размер рубашек/блузок</p>
+                  <div class="sizes-list__list">
+                    <label class="size-checkbox" for="size_12">
+                      <input id="size_12" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">42</span>
+                    </label>
+                    <label class="size-checkbox" for="size_22">
+                      <input id="size_22" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">44</span>
+                    </label>
+                    <label class="size-checkbox" for="size_32">
+                      <input id="size_32" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">46</span>
+                    </label>
+                    <label class="size-checkbox" for="size_42">
+                      <input id="size_42" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">48</span>
+                    </label>
+                    <label class="size-checkbox" for="size_52">
+                      <input id="size_52" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">50</span>
+                    </label>
+                    <label class="size-checkbox" for="size_62">
+                      <input id="size_62" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">52</span>
+                    </label>
+                    <label class="size-checkbox" for="size_72">
+                      <input id="size_72" type="checkbox" name="size" value="" checked>
+                      <span class="size-checkbox__text">54</span>
+                    </label>
+                    <label class="size-checkbox" for="size_82">
+                      <input id="size_82" type="checkbox" name="size" value="" checked>
+                      <span class="size-checkbox__text">56</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="sizes-list">
+                  <p class="sizes-list__title">Укажите размер для верхней одежды</p>
+                  <div class="sizes-list__list">
+                    <label class="size-checkbox" for="size_13">
+                      <input id="size_13" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">42</span>
+                    </label>
+                    <label class="size-checkbox" for="size_23">
+                      <input id="size_23" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">44</span>
+                    </label>
+                    <label class="size-checkbox" for="size_33">
+                      <input id="size_33" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">46</span>
+                    </label>
+                    <label class="size-checkbox" for="size_43">
+                      <input id="size_43" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">48</span>
+                    </label>
+                    <label class="size-checkbox" for="size_53">
+                      <input id="size_53" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">50</span>
+                    </label>
+                    <label class="size-checkbox" for="size_63">
+                      <input id="size_63" type="checkbox" name="size" value="">
+                      <span class="size-checkbox__text">52</span>
+                    </label>
+                    <label class="size-checkbox" for="size_73">
+                      <input id="size_73" type="checkbox" name="size" value="" checked>
+                      <span class="size-checkbox__text">54</span>
+                    </label>
+                    <label class="size-checkbox" for="size_83">
+                      <input id="size_83" type="checkbox" name="size" value="" checked>
+                      <span class="size-checkbox__text">56</span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="features__item">
-              <div class="feature">
-                <div class="feature__image">
-                  <img src="images/main_page/feature_2.svg" alt="">
-                </div>
-                <p class="feature__title">Практичность</p>
-                <p class="feature__text">Безусловно, экономическая повестка сегодняшнего дня играет важную роль в формировании поставленных задач.</p>
-              </div>
+            <div class="account-grid__button-block">
+              <button class="button button--fill button--wide button--maxw_280" type="submit">Сохранить изменения</button>
             </div>
-            <div class="features__item">
-              <div class="feature">
-                <div class="feature__image">
-                  <img src="images/main_page/feature_3.svg" alt="">
-                </div>
-                <p class="feature__title">Ассортимент</p>
-                <p class="feature__text">В своем стремлении повысить качество жизни, они забывают, что внедрение современных методик требует определения.</p>
-              </div>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -488,6 +579,310 @@
           alt="">
       </div>
     </footer>
+
+    <div class="popups-wrapper">
+      <div id="vacancy" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Анкета соискателя</p>
+        <form action="">
+          <label class="input-block" for="email">
+            <span class="input-block__label">Email</span>
+            <input id="email" class="input-block__input" type="text" name="email" value="">
+          </label>
+          <label class="input-block" for="name">
+            <span class="input-block__label">ФИО</span>
+            <input id="name" class="input-block__input" type="text" name="name" value="">
+          </label>
+          <label class="input-block" for="phone">
+            <span class="input-block__label">Телефон</span>
+            <input id="phone" class="input-block__input" type="text" name="phone" value="">
+          </label>
+          <label class="input-block" for="city">
+            <span class="input-block__label">Город</span>
+            <input id="city" class="input-block__input" type="text" name="city" value="">
+          </label>
+          <label class="input-block" for="exp">
+            <span class="input-block__label">Опыт работы</span>
+            <textarea id="exp" class="input-block__textarea"></textarea>
+          </label>
+          <label class="input-block" for="comment">
+            <span class="input-block__label">Комментарий</span>
+            <textarea id="comment" class="input-block__textarea"></textarea>
+          </label>
+          <label class="file-upload" for="file-upload">
+            <input class="file-upload__file" type="file">
+            Загрузить файл резюме
+          </label>
+          <div class="n-popup__button-block mt-60">
+            <button class="button button--h50 button--fill button--wide" type="submit">Подать заявку</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="login" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Вход</p>
+        <form action="">
+          <label class="input-block" for="login">
+            <span class="input-block__label">Email или номер телефона</span>
+            <input id="login" class="input-block__input" type="text" name="login" value="">
+          </label>
+          <label class="input-block" for="pass">
+            <span class="input-block__label">Пароль</span>
+            <input id="pass" class="input-block__input" type="password" name="pass" value="">
+          </label>
+          <p class="n-popup__forgot"><a href="#">Забыли пароль?</a></p>
+          <div class="n-popup__button-block n-popup__button-block--two_btn mb-40">
+            <button class="button" type="button">Регистрация</button>
+            <button class="button button--fill" type="submit">Войти</button>
+          </div>
+          <div class="social-block">
+            <p class="social-block__title">Авторизуйтесь в один клик</p>
+            <div class="social-block__list">
+              <a class="social-link" href="#">
+                <img src="images/tw.png" alt="twitter.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/gg.png" alt="googleplus.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/fb.png" alt="facebook.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/ok.png" alt="ok.ru">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/vk.png" alt="vk.com">
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+      <div id="b2c_reg" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Регистрация</p>
+        <form action="">
+          <label class="input-block" for="email_2">
+            <span class="input-block__label">Email</span>
+            <input id="email_2" class="input-block__input" type="text" name="email_2" value="">
+          </label>
+          <label class="input-block" for="name_2">
+            <span class="input-block__label">ФИО</span>
+            <input id="name_2" class="input-block__input" type="text" name="name_2" value="">
+          </label>
+          <label class="input-block" for="phone_2">
+            <span class="input-block__label">Телефон</span>
+            <input id="phone_2" class="input-block__input" type="text" name="phone_2" value="">
+          </label>
+          <div class="n-popup__button-block text-center mb-40 mt-40">
+            <button class="button button--fill button--minw_224" type="button">Зарегестрироваться</button>
+          </div>
+          <div class="social-block">
+            <p class="social-block__title">Зарегестрируйтесь в один клик</p>
+            <div class="social-block__list">
+              <a class="social-link" href="#">
+                <img src="images/tw.png" alt="twitter.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/gg.png" alt="googleplus.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/fb.png" alt="facebook.com">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/ok.png" alt="ok.ru">
+              </a>
+              <a class="social-link" href="#">
+                <img src="images/vk.png" alt="vk.com">
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+      <div id="recover_1" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Восстановление пароля</p>
+        <form action="">
+          <label class="input-block" for="email_3">
+            <span class="input-block__label">Email</span>
+            <input id="email_3" class="input-block__input" type="text" name="email_3" value="">
+          </label>
+          <div class="n-popup__button-block text-center mt-40">
+            <button class="button button--fill button--minw_224" type="button">Выслать пароль</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="recover_2" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Восстановление пароля</p>
+        <form action="">
+          <p class="n-popup__text mb-60">Новый пароль отправлен на почту.</p>
+          <div class="n-popup__button-block text-center mt-40">
+            <button class="js-popup-close button button--fill button--minw_224" type="button">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="form_size_1" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <form action="">
+          <p class="n-popup__text mb-20">Вас интересует размер которого нет?<br> Нажмите на размер, чтобы добавить его в избранные. Когда нужный вам размер появиться в наличии мы обязательно вас известим по электронной почте!</p>
+          <div class="fav-sizes mb-15">
+            <button class="fav-size" type="button">46</button>
+            <button class="fav-size" type="button">48</button>
+            <button class="fav-size" type="button">50</button>
+            <button class="fav-size is-active" type="button">52</button>
+          </div>
+          <div class="n-popup__button-block text-center">
+            <button class="button button--fill button--minw_224" type="button">Оставить заявку</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="form_size_2" class="n-popup n-popup--middle">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <form action="">
+          <p class="n-popup__text mb-30 max-width-340">Когда появится нужный размер %Название товара% - мы уведомим ваc по электронной почте.</p>
+          <div class="n-popup__button-block text-center">
+            <button class="js-popup-close button button--fill button--minw_224" type="button">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="b2b_reg" class="n-popup n-popup--big">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Регистрация</p>
+        <form action="">
+          <div class="n-popup__row">
+            <div class="n-popup__column">
+              <label class="input-block" for="email_4">
+                <span class="input-block__label">Email</span>
+                <input id="email_4" class="input-block__input" type="text" name="email_4" value="">
+              </label>
+              <label class="input-block" for="phone_3">
+                <span class="input-block__label">Телефон</span>
+                <input id="phone_3" class="input-block__input" type="text" name="phone_3" value="">
+              </label>
+              <label class="input-block" for="name_3">
+                <span class="input-block__label">ФИО</span>
+                <input id="name_3" class="input-block__input" type="text" name="name_3" value="">
+              </label>
+              <label class="input-block" for="place">
+                <span class="input-block__label">Должность</span>
+                <input id="place" class="input-block__input" type="text" name="place" value="">
+              </label>
+              <label class="input-block" for="company">
+                <span class="input-block__label">Полное название организации</span>
+                <input id="company" class="input-block__input" type="text" name="company" value="">
+              </label>
+              <label class="input-block" for="address">
+                <span class="input-block__label">Полное название организации</span>
+                <textarea id="address" class="input-block__textarea input-block__textarea--h120"></textarea>
+              </label>
+            </div>
+            <div class="n-popup__column">
+              <label class="input-block" for="inn">
+                <span class="input-block__label">ИНН</span>
+                <input id="inn" class="input-block__input" type="text" name="inn" value="">
+              </label>
+              <label class="input-block" for="kpp">
+                <span class="input-block__label">КПП</span>
+                <input id="kpp" class="input-block__input" type="text" name="kpp" value="">
+              </label>
+              <label class="input-block" for="ogrn">
+                <span class="input-block__label">ОГРН</span>
+                <input id="ogrn" class="input-block__input" type="text" name="ogrn" value="">
+              </label>
+              <label class="input-block" for="bik">
+                <span class="input-block__label">БИК</span>
+                <input id="bik" class="input-block__input" type="text" name="bik" value="">
+              </label>
+              <label class="input-block" for="bank">
+                <span class="input-block__label">Название банка</span>
+                <input id="bank" class="input-block__input" type="text" name="bank" value="">
+              </label>
+              <label class="input-block" for="ks">
+                <span class="input-block__label">Корреспондентский счет</span>
+                <input id="ks" class="input-block__input" type="text" name="ks" value="">
+              </label>
+              <label class="input-block" for="rs">
+                <span class="input-block__label">Рассчетный счет</span>
+                <input id="rs" class="input-block__input" type="text" name="rs" value="">
+              </label>
+            </div>
+          </div>
+          <div class="n-popup__button-block text-center mt-45">
+            <button class="button button--fill button--wide button--maxw_448" type="button">Зарегестрироваться</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="save-b2c" class="n-popup n-popup--small n-popup--v_align_center">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title mb-25">Введите код из смс</p>
+        <form action="">
+          <label class="input-block" for="sms_code">
+            <input id="sms_code" class="input-block__input" type="text" name="sms_code" value="">
+          </label>
+          <div class="n-popup__button-block mt-25">
+            <button class="js-popup-open button button--wide button--fill" type="submit" data-popup="save-b2c_2">Подтвердить</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="save-b2c_2" class="n-popup n-popup--small n-popup--v_align_center">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title mb-25">Код введен успешно!</p>
+        <form action="">
+          <div class="n-popup__button-block">
+            <button class="js-popup-close button button--wide button--fill" type="submit">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>

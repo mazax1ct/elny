@@ -9,10 +9,6 @@
 
   <title>Popups</title>
 
-  <link href="css/base/stylesheet.css" rel="stylesheet" position="1">
-  <link href="css/base/nouislider.css" rel="stylesheet" position="1">
-  <link href="css/base/slimselect.css" rel="stylesheet" position="1">
-  <link href="css/base/tiny-slider.css" rel="stylesheet" position="1">
   <link href="css/base/reset.css" rel="stylesheet" position="1">
   <link href="css/base/grid.css" rel="stylesheet" position="1">
   <link href="css/base/scrollbar.css" rel="stylesheet" position="1">
@@ -133,6 +129,10 @@
       <symbol id="icon-arrow-left" viewBox="0 0 12 12">
         <path d="M2.8,5.4L8,0.2c0.3-0.3,0.9-0.3,1.2,0c0.3,0.3,0.3,0.9,0,1.2L4.6,6l4.7,4.6c0.3,0.3,0.3,0.9,0,1.2c-0.3,0.3-0.9,0.3-1.2,0L2.8,6.6C2.6,6.4,2.5,6.2,2.5,6C2.5,5.8,2.6,5.6,2.8,5.4z" />
       </symbol>
+      <symbol id="icon-acs-desc" viewBox="0 0 15 15">
+        <path d="M4.09196 1.02477L4.03711 13.0247M4.03711 13.0247L7.03711 8.52466M4.03711 13.0247L1.03733 8.52467" stroke="#ECDEDE" />
+        <path d="M11.5437 14.0247L11.4992 2.02472M11.4992 2.02472L8.53656 6.5494M11.4992 2.02472L14.5361 6.49973" stroke="#ECDEDE" />
+      </symbol>
     </svg>
   </div>
   <div id="app">
@@ -155,7 +155,7 @@
         <div class="header-element search-container-wrapper">
           <div class="search-container ">
             <div class="search-container-image">
-              <img src="index_files/search.png" alt="">
+              <img src="images/search.png" alt="">
             </div>
             <input type="text" class="search-input">
           </div>
@@ -371,7 +371,7 @@
             <use xlink:href="#icon-popup-close"></use>
           </svg>
         </button>
-        <p class="n-popup__title">Анкета соискателя</p>
+        <p class="n-popup__title text-center mb-30">Анкета соискателя</p>
         <form action="">
           <label class="input-block" for="email">
             <span class="input-block__label">Email</span>
@@ -402,7 +402,7 @@
             Загрузить файл резюме
           </label>
           <div class="n-popup__button-block mt-60">
-            <button class="button button--big button--fill button--wide" type="submit">Подать заявку</button>
+            <button class="button button--h50 button--fill button--wide" type="submit">Подать заявку</button>
           </div>
         </form>
       </div>
@@ -413,7 +413,7 @@
             <use xlink:href="#icon-popup-close"></use>
           </svg>
         </button>
-        <p class="n-popup__title">Вход</p>
+        <p class="n-popup__title text-center mb-30">Вход</p>
         <form action="">
           <label class="input-block" for="login">
             <span class="input-block__label">Email или номер телефона</span>
@@ -457,7 +457,7 @@
             <use xlink:href="#icon-popup-close"></use>
           </svg>
         </button>
-        <p class="n-popup__title">Регистрация</p>
+        <p class="n-popup__title text-center mb-30">Регистрация</p>
         <form action="">
           <label class="input-block" for="email_2">
             <span class="input-block__label">Email</span>
@@ -472,7 +472,7 @@
             <input id="phone_2" class="input-block__input" type="text" name="phone_2" value="">
           </label>
           <div class="n-popup__button-block text-center mb-40 mt-40">
-            <button class="button button--fill button--fixed" type="button">Зарегестрироваться</button>
+            <button class="button button--fill button--minw_224" type="button">Зарегестрироваться</button>
           </div>
           <div class="social-block">
             <p class="social-block__title">Зарегестрируйтесь в один клик</p>
@@ -503,14 +503,14 @@
             <use xlink:href="#icon-popup-close"></use>
           </svg>
         </button>
-        <p class="n-popup__title">Восстановление пароля</p>
+        <p class="n-popup__title text-center mb-30">Восстановление пароля</p>
         <form action="">
           <label class="input-block" for="email_3">
             <span class="input-block__label">Email</span>
             <input id="email_3" class="input-block__input" type="text" name="email_3" value="">
           </label>
           <div class="n-popup__button-block text-center mt-40">
-            <button class="button button--fill button--fixed" type="button">Выслать пароль</button>
+            <button class="button button--fill button--minw_224" type="button">Выслать пароль</button>
           </div>
         </form>
       </div>
@@ -521,11 +521,11 @@
             <use xlink:href="#icon-popup-close"></use>
           </svg>
         </button>
-        <p class="n-popup__title">Восстановление пароля</p>
+        <p class="n-popup__title text-center mb-30">Восстановление пароля</p>
         <form action="">
           <p class="n-popup__text mb-60">Новый пароль отправлен на почту.</p>
           <div class="n-popup__button-block text-center mt-40">
-            <button class="js-popup-close button button--fill button--fixed" type="button">Закрыть</button>
+            <button class="js-popup-close button button--fill button--minw_224" type="button">Закрыть</button>
           </div>
         </form>
       </div>
@@ -545,7 +545,7 @@
             <button class="fav-size is-active" type="button">52</button>
           </div>
           <div class="n-popup__button-block text-center">
-            <button class="button button--fill button--fixed" type="button">Оставить заявку</button>
+            <button class="button button--fill button--minw_224" type="button">Оставить заявку</button>
           </div>
         </form>
       </div>
@@ -559,7 +559,7 @@
         <form action="">
           <p class="n-popup__text mb-30 max-width-340">Когда появится нужный размер %Название товара% - мы уведомим ваc по электронной почте.</p>
           <div class="n-popup__button-block text-center">
-            <button class="js-popup-close button button--fill button--fixed" type="button">Закрыть</button>
+            <button class="js-popup-close button button--fill button--minw_224" type="button">Закрыть</button>
           </div>
         </form>
       </div>
@@ -570,7 +570,7 @@
             <use xlink:href="#icon-popup-close"></use>
           </svg>
         </button>
-        <p class="n-popup__title">Регистрация</p>
+        <p class="n-popup__title text-center mb-30">Регистрация</p>
         <form action="">
           <div class="n-popup__row">
             <div class="n-popup__column">
@@ -631,7 +631,38 @@
             </div>
           </div>
           <div class="n-popup__button-block text-center mt-45">
-            <button class="button button--fill button--wide button--long" type="button">Зарегестрироваться</button>
+            <button class="button button--fill button--wide button--maxw_448" type="button">Зарегестрироваться</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="save-b2c" class="n-popup n-popup--small n-popup--v_align_center">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title mb-25">Введите код из смс</p>
+        <form action="">
+          <label class="input-block" for="sms_code">
+            <input id="sms_code" class="input-block__input" type="text" name="sms_code" value="">
+          </label>
+          <div class="n-popup__button-block mt-25">
+            <button class="js-popup-open button button--wide button--fill" type="submit" data-popup="save-b2c_2">Подтвердить</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="save-b2c_2" class="n-popup n-popup--small n-popup--v_align_center">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title mb-25">Код введен успешно!</p>
+        <form action="">
+          <div class="n-popup__button-block">
+            <button class="js-popup-close button button--wide button--fill" type="submit">Закрыть</button>
           </div>
         </form>
       </div>

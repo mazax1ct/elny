@@ -3,6 +3,14 @@
     line-height: 28px;
   }
 
+  .fw_400 {
+    font-weight: 400;
+  }
+
+  .fw_500 {
+    font-weight: 500;
+  }
+
   .container {
     &--1440 {
       max-width: 1440px;
@@ -15,8 +23,6 @@
     justify-content: center;
     position: relative;
     z-index: 3;
-
-
   }
 
   .menu-bottom-item {

@@ -29,6 +29,20 @@
     transform: translateX(-50%);
     width: 100%;
 
+    &--v_align_center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--small {
+      min-height: 248px;
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+
     &--middle {
       max-width: 520px;
     }
@@ -62,8 +76,7 @@
     &__title {
       font-size: 22px;
       font-weight: 500;
-      margin-bottom: 30px;
-      text-align: center;
+      margin-bottom: 10px;
     }
 
     .input-block__input,

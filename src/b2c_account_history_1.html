@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>B2C Account History 1</title>
+
+  //= template/style.html
+</head>
+
+<body class="front">
+  //= template/svg.html
+  <div id="app">
+    //= template/header.html
+    //= template/menu_second_level.html
+    //= template/alert-holder.html
+    <div class="container">
+      <div class="breadcrumb">
+        <ul class="breadcrumb-holder">
+          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Главная</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Личный кабинет</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-last">
+              История заказов
+            </span>
+          </li>
+          <li class="breadcrumb-item"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1 class="mb-30">История заказов</h1>
+        <ul class="tabs-nav">
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="#">Личный кабинет</a></li>
+          <li class="tabs-nav__item"><a class="tabs-nav__link is-active" href="#">История заказов</a></li>
+        </ul>
+        <h2 class="h3 mb-15">Заказов: 3</h2>
+        <div class="orders-history">
+          <div class="orders-history__title">
+            <a class="orders-history__cell" href="#">
+              <span class="nowrap">Заказ<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Дата <span class="nowrap">заказа<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Способ <span class="nowrap">доставки<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              <span class="nowrap">Статус<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Стоимость<br> <span class="nowrap">доставки <span class="rub">руб.</span> <svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Общая <span class="nowrap">скидка<svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <a class="orders-history__cell" href="#">
+              Итоговая <span class="nowrap">сумма <span class="rub">руб.</span><svg class="orders-history__asc-desc">
+                  <use xlink:href="#icon-acs-desc"></use>
+                </svg></span>
+            </a>
+            <div class="orders-history__cell">Способ <span class="nowrap">оплаты <span class="rub">руб.</span></span></div>
+          </div>
+          <a class="orders-history__item" href="#">
+            <span class="orders-history__cell">№167869</span>
+            <span class="orders-history__cell">12.12.2019</span>
+            <span class="orders-history__cell">Самовывоз из магазина</span>
+            <span class="orders-history__cell">Новый</span>
+            <span class="orders-history__cell"><span class="nowrap">0 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">400 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">12 000 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell">Наличные</span>
+          </a>
+          <a class="orders-history__item" href="#">
+            <span class="orders-history__cell">№167868</span>
+            <span class="orders-history__cell">12.11.2019</span>
+            <span class="orders-history__cell">Пункт выдачи СДЭК</span>
+            <span class="orders-history__cell">Закрыт</span>
+            <span class="orders-history__cell"><span class="nowrap">450 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">400 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">15 000 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell">Наличные</span>
+          </a>
+          <a class="orders-history__item" href="#">
+            <span class="orders-history__cell">№167867</span>
+            <span class="orders-history__cell">12.10.2019</span>
+            <span class="orders-history__cell">Курьером до адреса</span>
+            <span class="orders-history__cell">Закрыт</span>
+            <span class="orders-history__cell"><span class="nowrap">1200 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">400 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell"><span class="nowrap">12 000 <span class="rub">руб.</span></span></span>
+            <span class="orders-history__cell">Наличные</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    //= template/footer.html
+
+    //= template/popups.html
+  </div>
+  //= template/scripts.html
+</body>
+
+</html>
