@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>B2B Account</title>
+
+  //= template/style.html
+</head>
+
+<body class="front">
+  //= template/svg.html
+  <div id="app">
+    //= template/header.html
+    //= template/menu_second_level.html
+    //= template/alert-holder.html
+    <div class="container">
+      <div class="breadcrumb">
+        <ul class="breadcrumb-holder">
+          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Главная</a></li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator">
+              <svg>
+                <use xlink:href="#separator"></use>
+              </svg>
+            </span>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-last">
+              Личный кабинет
+            </span>
+          </li>
+          <li class="breadcrumb-item"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <h1 class="mb-30">Личный кабинет B2B</h1>
+        <ul class="tabs-nav">
+          <li class="tabs-nav__item"><a class="tabs-nav__link is-active" href="#">Личный кабинет</a></li>
+          <li class="tabs-nav__item"><a class="tabs-nav__link" href="#">История заказов</a></li>
+        </ul>
+        <div class="account-grid">
+          <form method="get" action="">
+            <div class="account-grid__row">
+              <div class="account-grid__item account-grid__item--w_38">
+                <h2 class="mb-25">Данные контактного лица</h2>
+                <label class="input-block" for="email_6">
+                  <span class="input-block__label">Email</span>
+                  <input id="email_6" class="input-block__input" type="text" name="email_6" value="">
+                </label>
+                <label class="input-block" for="place_2">
+                  <span class="input-block__label">Должность</span>
+                  <input id="place_2" class="input-block__input" type="text" name="place_2" value="">
+                </label>
+                <label class="input-block" for="name_5">
+                  <span class="input-block__label">ФИО</span>
+                  <input id="name_5" class="input-block__input" type="text" name="name_5" value="">
+                </label>
+                <label class="input-block" for="phone_5">
+                  <span class="input-block__label-block">
+                    <span class="input-block__label">Телефон</span>
+                    <a class="js-popup-open input-block__verify" href="javascript:void(0)" data-popup="verify-phone">Подтвердить номер телефона</a>
+                  </span>
+                  <input id="phone_5" class="input-block__input" type="text" name="phone_5" value="">
+                </label>
+                <label class="input-block" for="old_pass_2">
+                  <span class="input-block__label input-block__label--verified">Старый пароль</span>
+                  <input id="old_pass_2" class="input-block__input" type="password" name="old_pass_2" value="">
+                </label>
+                <label class="input-block" for="new_pass_2">
+                  <span class="input-block__label">Новый пароль</span>
+                  <input id="new_pass_2" class="input-block__input" type="password" name="new_pass_2" value="">
+                </label>
+                <label class="input-block" for="re_new_pass_2">
+                  <span class="input-block__label">Повторите новый пароль</span>
+                  <input id="re_new_pass_2" class="input-block__input" type="password" name="re_new_pass_2" value="">
+                </label>
+                <div class="title-block mb-25 mt-50">
+                  <h2>Данные для доставки</h2>
+                  <div class="title-block__controls">
+                    <a href="#">Добавить</a>
+                    <a href="#">Удалить</a>
+                  </div>
+                </div>
+                <label class="input-block" for="city_9">
+                  <span class="input-block__label">Город</span>
+                  <div class="custom-select">
+                    <select id="city_9">
+                      <option value="1">Санкт-Петербург</option>
+                      <option value="2">Москва</option>
+                    </select>
+                  </div>
+                </label>
+                <label class="input-block" for="address_3">
+                  <span class="input-block__label">Адрес</span>
+                  <textarea id="address_3" class="input-block__textarea"></textarea>
+                </label>
+                <label class="input-block" for="comment_2">
+                  <span class="input-block__label">Комментарий к заказу</span>
+                  <textarea id="comment_2" class="input-block__textarea"></textarea>
+                </label>
+              </div>
+              <div class="account-grid__item account-grid__item--w_38">
+                <div class="title-block mb-25">
+                  <h2>Реквизиты </h2>
+                  <div class="title-block__controls">
+                    <a href="#">Добавить</a>
+                    <a href="#">Удалить</a>
+                  </div>
+                </div>
+                <label class="input-block" for="company_3">
+                  <span class="input-block__label">ООО</span>
+                  <div class="custom-select">
+                    <select id="company_3">
+                      <option value="1">«Грандтек»</option>
+                      <option value="2">Другая компания</option>
+                    </select>
+                  </div>
+                </label>
+                <label class="input-block" for="company_name">
+                  <span class="input-block__label">Название организации</span>
+                  <input id="company_name" class="input-block__input" type="text" name="company_name" value="">
+                </label>
+                <label class="input-block" for="address_4">
+                  <span class="input-block__label">Юридический адрес</span>
+                  <textarea id="address_4" class="input-block__textarea"></textarea>
+                </label>
+                <label class="input-block" for="inn_2">
+                  <span class="input-block__label">ИНН</span>
+                  <input id="inn_2" class="input-block__input" type="text" name="inn_2" value="">
+                </label>
+                <label class="input-block" for="kpp_2">
+                  <span class="input-block__label">КПП</span>
+                  <input id="kpp_2" class="input-block__input" type="text" name="kpp_2" value="">
+                </label>
+                <label class="input-block" for="rs_2">
+                  <span class="input-block__label">Рассчетный счет</span>
+                  <input id="rs_2" class="input-block__input" type="text" name="rs_2" value="">
+                </label>
+                <label class="input-block" for="ogrn_2">
+                  <span class="input-block__label">ОГРН</span>
+                  <input id="ogrn_2" class="input-block__input" type="text" name="ogrn_2" value="">
+                </label>
+                <label class="input-block" for="bik_2">
+                  <span class="input-block__label">БИК</span>
+                  <input id="bik_2" class="input-block__input" type="text" name="bik_2" value="">
+                </label>
+                <label class="input-block" for="bank_2">
+                  <span class="input-block__label">Название банка</span>
+                  <input id="bank_2" class="input-block__input" type="text" name="bank_2" value="">
+                </label>
+                <label class="input-block" for="ks_2">
+                  <span class="input-block__label">Корреспондентский счет</span>
+                  <input id="ks_2" class="input-block__input" type="text" name="ks_2" value="">
+                </label>
+              </div>
+              <div class="account-grid__item account-grid__item--w_24">
+                <div class="upload-block">
+                  <div class="upload-block__image-block">
+                    <img src="images/b2b_account/cloud.svg" alt="">
+                  </div>
+                  <p class="upload-block__text">Загрузите учредительные документы<br> PDF, DOC, TXT, SCAN, ODT, NTP</p>
+                  <button class="button button--wide button--fill" type="button">Загрузить</button>
+                </div>
+                <div class="upload-block">
+                  <div class="upload-block__image-block">
+                    <img src="images/b2b_account/document.svg" alt="">
+                  </div>
+                  <p class="upload-block__text">Заполните анкету и получите скидку на следущий заказ</p>
+                  <button class="button button--wide button--fill" type="button">Загрузить</button>
+                </div>
+              </div>
+            </div>
+            <div class="account-grid__button-block">
+              <button class="button button--fill button--wide button--maxw_280" type="submit">Сохранить изменения</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    //= template/footer.html
+
+    //= template/popups.html
+  </div>
+  //= template/scripts.html
+</body>
+
+</html>

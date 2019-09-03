@@ -13,16 +13,20 @@
       padding-left: 24px;
       padding-right: 24px;
 
-      &:first-child {
-        width: 35.46%
+      &--w_38 {
+        width: 38%;
       }
 
-      &:nth-child(2) {
-        width: 30.625%
+      &--w_33 {
+        width: 33%;
       }
 
-      &:nth-child(3) {
-        width: 33.915%
+      &--w_29 {
+        width: 29%;
+      }
+
+      &--w_24 {
+        width: 24%;
       }
     }
 
