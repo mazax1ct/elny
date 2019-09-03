@@ -1,72 +1,70 @@
-.front {
-  .banner {
-    margin-bottom: 34px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1440px;
-    position: relative;
+.banner {
+  margin-bottom: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  position: relative;
 
-    &--faded {
-      &:hover,
-      &:focus {
-        &::after {
-          background-color: rgba(0,0,0,0.3);
-        }
-      }
-
+  &--faded {
+    &:hover,
+    &:focus {
       &::after {
-        background-color: rgba(0,0,0,0.1);
-        content: '';
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        transition: background-color 0.3s;
-        width: 100%;
-        z-index: 1;
+        background-color: rgba(0,0,0,0.3);
       }
     }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    &__inner {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+    &::after {
+      background-color: rgba(0,0,0,0.1);
+      content: '';
       height: 100%;
-      left: 50%;
-      max-width: 1275px;
-      padding: 75px 20px;
+      left: 0;
       position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      top: 0;
+      transition: background-color 0.3s;
       width: 100%;
-      z-index: 2;
+      z-index: 1;
     }
+  }
 
-    &__title {
-      color: #fff;
-      font-size: 36px;
-      font-weight: 500;
-      letter-spacing: 6px;
-      margin-bottom: 35px;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-    &__button {
-      align-items: center;
-      border: 1px solid #fff;
-      border-radius: 5px;
-      color: #fff;
-      display: inline-flex;
-      font-size: 12px;
-      font-weight: 700;
-      height: 70px;
-      justify-content: center;
-      min-width: 200px;
-      text-decoration: none;
-    }
+  &__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    left: 50%;
+    max-width: 1275px;
+    padding: 75px 20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+  }
+
+  &__button {
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 700;
+    height: 70px;
+    justify-content: center;
+    min-width: 200px;
+    text-decoration: none;
   }
 }

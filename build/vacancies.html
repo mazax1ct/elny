@@ -133,6 +133,28 @@
         <path d="M4.09196 1.02477L4.03711 13.0247M4.03711 13.0247L7.03711 8.52466M4.03711 13.0247L1.03733 8.52467" stroke="#ECDEDE" />
         <path d="M11.5437 14.0247L11.4992 2.02472M11.4992 2.02472L8.53656 6.5494M11.4992 2.02472L14.5361 6.49973" stroke="#ECDEDE" />
       </symbol>
+      <symbol id="icon-doc" viewBox="0 0 41 41">
+        <path d="M20.5 41C31.8218 41 41 31.8218 41 20.5C41 9.17814 31.8218 0 20.5 0C9.17815 0 0 9.17814 0 20.5C0 31.8218 9.17815 41 20.5 41Z" fill="#7F859C" />
+        <path d="M19.928 15.8328L19.9115 8.21474H28.6818V30.8949H12.31V15.8245L19.928 15.8328ZM11.1577 15.4432V30.8949V32.0471H12.31H28.6818H29.834V30.8949V8.21474V7.0625H28.6818H19.6048L11.1577 15.4432Z" fill="white" />
+        <path d="M13.963 20.2363H26.6211V19.225H13.963V20.2363Z" fill="white" />
+        <path d="M13.963 23.7407H26.6211V22.7294H13.963V23.7407Z" fill="white" />
+        <path d="M13.963 27.2451H26.6211V26.2338H13.963V27.2451Z" fill="white" />
+      </symbol>
+      <symbol id="icon-doc-delete" viewBox="0 0 20 20">
+        <path d="M18.8,19.7L0.2,1.2C0,0.9,0,0.5,0.3,0.3l0,0C0.5,0,0.9,0,1.2,0.3l18.6,18.6c0.3,0.3,0.3,0.7,0,0.9l0,0C19.5,20,19.1,20,18.8,19.7z" />
+        <path d="M0.3,18.9L18.8,0.2c0.3-0.3,0.7-0.3,0.9,0l0,0c0.3,0.3,0.3,0.7,0,0.9L1.2,19.8c-0.3,0.3-0.7,0.3-0.9,0l0,0C0.1,19.6,0.1,19.1,0.3,18.9z" />
+      </symbol>
+      <symbol id="icon-search-bar" viewBox="0 0 18 18">
+        <path fill="none" stroke="#7F859C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9.1,16.6c4.2,0,7.6-3.4,7.6-7.6c0-4.2-3.4-7.6-7.6-7.6c-4.2,0-7.6,3.4-7.6,7.6C1.5,13.2,4.9,16.6,9.1,16.6z" />
+        <path fill="none" stroke="#7F859C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18.5,18.5l-4.1-4.1" />
+      </symbol>
+      <symbol id="icon-bill" viewBox="0 0 41 41">
+        <path d="M20.5 41C31.8218 41 41 31.8218 41 20.5C41 9.17814 31.8218 0 20.5 0C9.17815 0 0 9.17814 0 20.5C0 31.8218 9.17815 41 20.5 41Z" fill="#7F859C" />
+        <path d="M19.9275 15.8328L19.911 8.21474H28.6813V30.8949H12.3095V15.8245L19.9275 15.8328ZM11.1572 15.4432V30.8949V32.0471H12.3095H28.6813H29.8335V30.8949V8.21474V7.0625H28.6813H19.6043L11.1572 15.4432Z" fill="#F5F5F7" />
+        <path d="M31 25.4173C31 26.2915 29.989 27 28.7421 27H12.2579C11.0105 27 10 26.2915 10 25.4173V20.5824C10 19.7082 11.0105 19 12.2579 19H28.7421C29.989 19 31 19.7082 31 20.5824V25.4173Z" fill="#F5F5F7" />
+        <path d="M15.8055 21.5V25H16.3755V23.8H17.0555C17.8855 23.8 18.5505 23.54 18.5505 22.65C18.5505 21.76 17.8855 21.5 17.0555 21.5H15.8055ZM17.9705 22.65C17.9705 23.16 17.5655 23.28 17.0855 23.28H16.3755V22.02H17.0855C17.5705 22.02 17.9705 22.14 17.9705 22.65ZM19.2209 21.5V25H20.4459C21.6859 25 22.2859 24.265 22.2859 23.25C22.2859 22.235 21.6859 21.5 20.4459 21.5H19.2209ZM21.7059 23.25C21.7059 24.035 21.2709 24.48 20.4409 24.48H19.7909V22.02H20.4409C21.2709 22.02 21.7059 22.465 21.7059 23.25ZM23.027 21.5V25H23.597V23.58H25.297V23.05H23.597V22.025H25.442V21.5H23.027Z"
+          fill="#7F859C" />
+      </symbol>
     </svg>
   </div>
   <div id="app">
@@ -420,7 +442,7 @@
     </footer>
 
     <div class="popups-wrapper">
-      <div id="vacancy" class="n-popup n-popup--middle">
+      <div id="vacancy" class="n-popup n-popup--maxw_520">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -462,7 +484,7 @@
         </form>
       </div>
     
-      <div id="login" class="n-popup n-popup--middle">
+      <div id="login" class="n-popup n-popup--maxw_520">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -506,7 +528,7 @@
         </form>
       </div>
     
-      <div id="b2c_reg" class="n-popup n-popup--middle">
+      <div id="b2c_reg" class="n-popup n-popup--maxw_520">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -552,7 +574,7 @@
         </form>
       </div>
     
-      <div id="recover_1" class="n-popup n-popup--middle">
+      <div id="recover_1" class="n-popup n-popup--maxw_520">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -570,7 +592,7 @@
         </form>
       </div>
     
-      <div id="recover_2" class="n-popup n-popup--middle">
+      <div id="recover_2" class="n-popup n-popup--maxw_520">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -585,7 +607,7 @@
         </form>
       </div>
     
-      <div id="form_size_1" class="n-popup n-popup--middle">
+      <div id="form_size_1" class="n-popup n-popup--maxw_520">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -605,7 +627,7 @@
         </form>
       </div>
     
-      <div id="form_size_2" class="n-popup n-popup--middle">
+      <div id="form_size_2" class="n-popup n-popup--maxw_520">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -619,7 +641,7 @@
         </form>
       </div>
     
-      <div id="b2b_reg" class="n-popup n-popup--big">
+      <div id="b2b_reg" class="n-popup n-popup--maxw_1020">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -691,7 +713,7 @@
         </form>
       </div>
     
-      <div id="verify-phone" class="n-popup n-popup--small n-popup--v_align_center">
+      <div id="verify-phone" class="n-popup n-popup--minh_248 n-popup--v_align_center">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -708,7 +730,7 @@
         </form>
       </div>
     
-      <div id="verify-phone_2" class="n-popup n-popup--small n-popup--v_align_center">
+      <div id="verify-phone_2" class="n-popup n-popup--minh_248 n-popup--v_align_center">
         <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
           <svg class="n-popup__close-icon">
             <use xlink:href="#icon-popup-close"></use>
@@ -718,6 +740,376 @@
         <form action="">
           <div class="n-popup__button-block">
             <button class="js-popup-close button button--wide button--fill" type="submit">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="docs" class="n-popup n-popup--maxw_520">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-30">Учредительные документы</p>
+        <form method="get" action="">
+          <p class="n-popup__text fw_500 mb-10">Выберете вашу ОПФ</p>
+          <label class="radio-label" for="company_type_1">
+            <input id="company_type_1" type="radio" name="company_type" value="1" checked>
+            <span class="radio-label__icon"></span>
+            <span class="radio-label__text">ИП</span>
+          </label>
+          <label class="radio-label" for="company_type_2">
+            <input id="company_type_2" type="radio" name="company_type" value="2">
+            <span class="radio-label__icon"></span>
+            <span class="radio-label__text">ООО</span>
+          </label>
+          <p class="color-purple fw_500 mb-20 mt-20">Для заключение договора и выставления счета просьба прислать следующие реквизиты</p>
+          <div class="doc-upload">
+            <div class="doc-upload__title-block">
+              <p class="doc-upload__title">Свидетельство о государственной регистрации ИП</p>
+              <a class="doc-upload__upload" href="#">Загрузить</a>
+            </div>
+            <div class="doc-upload__file">
+              <div class="doc-upload__file-icon">
+                <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+              </div>
+              <div class="doc-upload__file-info">
+                <p class="doc-upload__file-title">Свидетельство о государственной регистрации ИП.doc</p>
+                <div class="doc-upload__controls">
+                  <button class="doc-upload__delete" type="button" title="Удалить">
+                    <svg class="doc-upload__delete-icon">
+                      <use xlink:href="#icon-doc-delete"></use>
+                    </svg>
+                  </button>
+                  <div class="doc-upload__progress-bar">
+                    <div class="doc-upload__progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doc-upload">
+            <div class="doc-upload__title-block">
+              <p class="doc-upload__title">Карточка клиента с банковскими реквизитами</p>
+              <a class="doc-upload__upload" href="#">Загрузить</a>
+            </div>
+            <div class="doc-upload__file">
+              <div class="doc-upload__file-icon">
+                <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+              </div>
+              <div class="doc-upload__file-info">
+                <p class="doc-upload__file-title">Карточка клиента с банковскими реквизитами.doc</p>
+                <div class="doc-upload__controls">
+                  <button class="doc-upload__delete" type="button" title="Удалить">
+                    <svg class="doc-upload__delete-icon">
+                      <use xlink:href="#icon-doc-delete"></use>
+                    </svg>
+                  </button>
+                  <div class="doc-upload__progress-bar">
+                    <div class="doc-upload__progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doc-upload">
+            <div class="doc-upload__title-block">
+              <p class="doc-upload__title">Паспорт</p>
+              <a class="doc-upload__upload" href="#">Загрузить</a>
+            </div>
+            <div class="doc-upload__file">
+              <div class="doc-upload__file-icon">
+                <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+              </div>
+              <div class="doc-upload__file-info">
+                <p class="doc-upload__file-title">Паспорт.doc</p>
+                <div class="doc-upload__controls">
+                  <button class="doc-upload__delete" type="button" title="Удалить">
+                    <svg class="doc-upload__delete-icon">
+                      <use xlink:href="#icon-doc-delete"></use>
+                    </svg>
+                  </button>
+                  <div class="doc-upload__progress-bar">
+                    <div class="doc-upload__progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doc-upload">
+            <div class="doc-upload__title-block">
+              <p class="doc-upload__title">Копия ИНН</p>
+              <a class="doc-upload__upload" href="#">Загрузить</a>
+            </div>
+            <div class="doc-upload__file">
+              <div class="doc-upload__file-icon">
+                <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+              </div>
+              <div class="doc-upload__file-info">
+                <p class="doc-upload__file-title">Копия ИНН.doc</p>
+                <div class="doc-upload__controls">
+                  <button class="doc-upload__delete" type="button" title="Удалить">
+                    <svg class="doc-upload__delete-icon">
+                      <use xlink:href="#icon-doc-delete"></use>
+                    </svg>
+                  </button>
+                  <div class="doc-upload__progress-bar">
+                    <div class="doc-upload__progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doc-upload">
+            <div class="doc-upload__title-block">
+              <p class="doc-upload__title">Доверенность на заключение договора</p>
+              <a class="doc-upload__upload" href="#">Загрузить</a>
+            </div>
+            <div class="doc-upload__file">
+              <div class="doc-upload__file-icon">
+                <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+              </div>
+              <div class="doc-upload__file-info">
+                <p class="doc-upload__file-title">Доверенность на заключение договора.doc</p>
+                <div class="doc-upload__controls">
+                  <button class="doc-upload__delete" type="button" title="Удалить">
+                    <svg class="doc-upload__delete-icon">
+                      <use xlink:href="#icon-doc-delete"></use>
+                    </svg>
+                  </button>
+                  <div class="doc-upload__progress-bar">
+                    <div class="doc-upload__progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="n-popup__button-block text-center mt-30">
+            <button class="button button--h50 button--fill button--wide" type="button">Загрузить</button>
+          </div>
+        </form>
+      </div>
+    
+      <div id="docs_2" class="n-popup n-popup--maxw_950">
+        <button class="js-popup-close n-popup__close" type="button" title="Закрыть">
+          <svg class="n-popup__close-icon">
+            <use xlink:href="#icon-popup-close"></use>
+          </svg>
+        </button>
+        <p class="n-popup__title text-center mb-20">Учредительные документы</p>
+        <form method="get" action="">
+          <p class="n-popup__text fw_500 mb-10">Выберете вашу ОПФ</p>
+          <label class="radio-label" for="company_type_1">
+            <input id="company_type_1" type="radio" name="company_type" value="1">
+            <span class="radio-label__icon"></span>
+            <span class="radio-label__text">ИП</span>
+          </label>
+          <label class="radio-label" for="company_type_2">
+            <input id="company_type_2" type="radio" name="company_type" value="2" checked>
+            <span class="radio-label__icon"></span>
+            <span class="radio-label__text">ООО</span>
+          </label>
+          <p class="color-purple fw_500 mb-20 mt-20">Для заключение договора и выставления счета просьба<br> прислать следующие реквизиты</p>
+          <div class="n-popup__row">
+            <div class="n-popup__column">
+              <div class="doc-upload">
+                <div class="doc-upload__title-block">
+                  <p class="doc-upload__title">Свидетельство о государственной регистрации ИП</p>
+                  <a class="doc-upload__upload" href="#">Загрузить</a>
+                </div>
+                <div class="doc-upload__file">
+                  <div class="doc-upload__file-icon">
+                    <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+                  </div>
+                  <div class="doc-upload__file-info">
+                    <p class="doc-upload__file-title">Свидетельство о государственной регистрации ИП.doc</p>
+                    <div class="doc-upload__controls">
+                      <button class="doc-upload__delete" type="button" title="Удалить">
+                        <svg class="doc-upload__delete-icon">
+                          <use xlink:href="#icon-doc-delete"></use>
+                        </svg>
+                      </button>
+                      <div class="doc-upload__progress-bar">
+                        <div class="doc-upload__progress" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-upload">
+                <div class="doc-upload__title-block">
+                  <p class="doc-upload__title">Решение о назначении генерального директора</p>
+                  <a class="doc-upload__upload" href="#">Загрузить</a>
+                </div>
+                <div class="doc-upload__file">
+                  <div class="doc-upload__file-icon">
+                    <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+                  </div>
+                  <div class="doc-upload__file-info">
+                    <p class="doc-upload__file-title">Решение о назначении генерального директора.doc</p>
+                    <div class="doc-upload__controls">
+                      <button class="doc-upload__delete" type="button" title="Удалить">
+                        <svg class="doc-upload__delete-icon">
+                          <use xlink:href="#icon-doc-delete"></use>
+                        </svg>
+                      </button>
+                      <div class="doc-upload__progress-bar">
+                        <div class="doc-upload__progress" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-upload">
+                <div class="doc-upload__title-block">
+                  <p class="doc-upload__title">Решение/приказ о назначении главного бухгалтера (в случае, если не совпадает с генеральным директором)</p>
+                  <a class="doc-upload__upload" href="#">Загрузить</a>
+                </div>
+                <div class="doc-upload__file">
+                  <div class="doc-upload__file-icon">
+                    <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+                  </div>
+                  <div class="doc-upload__file-info">
+                    <p class="doc-upload__file-title">Решение/приказ о назначении главного бухгалтера (в случае, если не совпадает с генеральным директором).doc</p>
+                    <div class="doc-upload__controls">
+                      <button class="doc-upload__delete" type="button" title="Удалить">
+                        <svg class="doc-upload__delete-icon">
+                          <use xlink:href="#icon-doc-delete"></use>
+                        </svg>
+                      </button>
+                      <div class="doc-upload__progress-bar">
+                        <div class="doc-upload__progress" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-upload">
+                <div class="doc-upload__title-block">
+                  <p class="doc-upload__title">Свидетельство о присвоении ОГРН</p>
+                  <a class="doc-upload__upload" href="#">Загрузить</a>
+                </div>
+                <div class="doc-upload__file">
+                  <div class="doc-upload__file-icon">
+                    <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+                  </div>
+                  <div class="doc-upload__file-info">
+                    <p class="doc-upload__file-title">Свидетельство о присвоении ОГРН.doc</p>
+                    <div class="doc-upload__controls">
+                      <button class="doc-upload__delete" type="button" title="Удалить">
+                        <svg class="doc-upload__delete-icon">
+                          <use xlink:href="#icon-doc-delete"></use>
+                        </svg>
+                      </button>
+                      <div class="doc-upload__progress-bar">
+                        <div class="doc-upload__progress" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="n-popup__column">
+              <div class="doc-upload">
+                <div class="doc-upload__title-block">
+                  <p class="doc-upload__title">Свидетельство о присвоении ИНН и КПП</p>
+                  <a class="doc-upload__upload" href="#">Загрузить</a>
+                </div>
+                <div class="doc-upload__file">
+                  <div class="doc-upload__file-icon">
+                    <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+                  </div>
+                  <div class="doc-upload__file-info">
+                    <p class="doc-upload__file-title">Свидетельство о присвоении ИНН и КПП.doc</p>
+                    <div class="doc-upload__controls">
+                      <button class="doc-upload__delete" type="button" title="Удалить">
+                        <svg class="doc-upload__delete-icon">
+                          <use xlink:href="#icon-doc-delete"></use>
+                        </svg>
+                      </button>
+                      <div class="doc-upload__progress-bar">
+                        <div class="doc-upload__progress" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-upload">
+                <div class="doc-upload__title-block">
+                  <p class="doc-upload__title">Выписка из ЕГРЮЛ</p>
+                  <a class="doc-upload__upload" href="#">Загрузить</a>
+                </div>
+                <div class="doc-upload__file">
+                  <div class="doc-upload__file-icon">
+                    <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+                  </div>
+                  <div class="doc-upload__file-info">
+                    <p class="doc-upload__file-title">Выписка из ЕГРЮЛ.doc</p>
+                    <div class="doc-upload__controls">
+                      <button class="doc-upload__delete" type="button" title="Удалить">
+                        <svg class="doc-upload__delete-icon">
+                          <use xlink:href="#icon-doc-delete"></use>
+                        </svg>
+                      </button>
+                      <div class="doc-upload__progress-bar">
+                        <div class="doc-upload__progress" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-upload">
+                <div class="doc-upload__title-block">
+                  <p class="doc-upload__title">Доверенность (в случае подписания документов по доверенности)</p>
+                  <a class="doc-upload__upload" href="#">Загрузить</a>
+                </div>
+                <div class="doc-upload__file">
+                  <div class="doc-upload__file-icon">
+                    <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+                  </div>
+                  <div class="doc-upload__file-info">
+                    <p class="doc-upload__file-title">Доверенность (в случае подписания документов по доверенности).doc</p>
+                    <div class="doc-upload__controls">
+                      <button class="doc-upload__delete" type="button" title="Удалить">
+                        <svg class="doc-upload__delete-icon">
+                          <use xlink:href="#icon-doc-delete"></use>
+                        </svg>
+                      </button>
+                      <div class="doc-upload__progress-bar">
+                        <div class="doc-upload__progress" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="doc-upload">
+                <div class="doc-upload__title-block">
+                  <p class="doc-upload__title">Карточка клиента с банковскими реквизитами</p>
+                  <a class="doc-upload__upload" href="#">Загрузить</a>
+                </div>
+                <div class="doc-upload__file">
+                  <div class="doc-upload__file-icon">
+                    <img src="images/doc-upload/icon-doc.svg" alt="Файл">
+                  </div>
+                  <div class="doc-upload__file-info">
+                    <p class="doc-upload__file-title">Карточка клиента с банковскими реквизитами.doc</p>
+                    <div class="doc-upload__controls">
+                      <button class="doc-upload__delete" type="button" title="Удалить">
+                        <svg class="doc-upload__delete-icon">
+                          <use xlink:href="#icon-doc-delete"></use>
+                        </svg>
+                      </button>
+                      <div class="doc-upload__progress-bar">
+                        <div class="doc-upload__progress" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="n-popup__button-block text-center mt-30">
+            <button class="button button--h50 button--fill button--wide button--maxw_448" type="button">Загрузить</button>
           </div>
         </form>
       </div>

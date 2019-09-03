@@ -1,29 +1,27 @@
-.front {
-  .social-block {
-    &__title {
-      color: $deep_black;
-      font-size: 22px;
-      font-weight: 500;
-      line-height: 24px;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
-    &__list {
-      display: flex;
-      justify-content: center;
-    }
+.social-block {
+  &__title {
+    color: $deep_black;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 15px;
+    text-align: center;
   }
 
-  .social-link {
-    height: 49px;
-    margin-left: 8px;
-    margin-right: 8px;
-    width: 49px;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+}
 
-    img {
-      height: auto;
-      max-width: 100%;
-    }
+.social-link {
+  height: 49px;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 49px;
+
+  img {
+    height: auto;
+    max-width: 100%;
   }
 }

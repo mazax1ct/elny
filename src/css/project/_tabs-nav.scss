@@ -1,44 +1,42 @@
-.front {
-  .tabs-nav {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 18px;
-    line-height: 22px;
-    list-style: none;
-    margin-bottom: 45px;
-    padding: 0;
+.tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  line-height: 22px;
+  list-style: none;
+  margin-bottom: 45px;
+  padding: 0;
 
-    &__item {
-      list-style: none;
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    align-items: center;
+    background-color: #f2f2f2;
+    border: 1px solid $purple;
+    color: $purple;
+    display: flex;
+    justify-content: center;
+    min-width: 264px;
+    min-height: 52px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#f2f2f2, 10%);
     }
 
-    &__link {
-      align-items: center;
-      background-color: #f2f2f2;
-      border: 1px solid $purple;
-      color: $purple;
-      display: flex;
-      justify-content: center;
-      min-width: 264px;
-      min-height: 52px;
-      padding-left: 12px;
-      padding-right: 12px;
-      text-decoration: none;
-      transition: background-color 0.3s;
+    &.is-active {
+      background-color: $purple;
+      color: #ECDEDE;
 
       &:hover,
       &:focus {
-        background-color: darken(#f2f2f2, 10%);
-      }
-
-      &.is-active {
         background-color: $purple;
-        color: #ECDEDE;
-
-        &:hover,
-        &:focus {
-          background-color: $purple;
-        }
       }
     }
   }

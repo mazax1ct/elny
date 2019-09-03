@@ -1,0 +1,107 @@
+.doc-upload {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title-block {
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    color: $deep_black;
+    font-weight: 700;
+  }
+
+  &__upload {
+    color: $purple;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    text-decoration: underline;
+  }
+
+  &__file {
+    display: flex;
+  }
+
+  &__file-icon {
+    min-width: 41px;
+  }
+
+  &__file-info {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 260px;
+    padding-left: 5px;
+  }
+
+  &__file-title {
+    color: $deep_black;
+    font-size: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__controls {
+    max-width: 257px;
+    position: relative;
+  }
+
+  &__progress-bar {
+    background-color: #ECDEDE;
+    border-radius: 3px;
+    height: 2px;
+    max-width: 257px;
+    position: relative;
+  }
+
+  &__progress {
+    background-color: $purple;
+    border-radius: 3px;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  &__delete {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    cursor: pointer;
+    height: 14px;
+    left: auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: -37px;
+    width: 14px;
+  }
+
+  &__delete-icon {
+    fill: $purple;
+    height: 12px;
+    width: 12px;
+
+    use {
+      fill: $purple;
+    }
+  }
+}
+
+.front {
+  .doc-upload__delete-icon {
+    height: 12px;
+    width: 12px;
+  }
+}

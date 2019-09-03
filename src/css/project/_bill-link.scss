@@ -1,0 +1,19 @@
+.bill-link {
+  align-items: center;
+  color: $deep_black;
+  display: inline-flex;
+  font-size: 10px;
+  line-height: 14px;
+
+  &__icon {
+    height: 41px;
+    min-width: 41px;
+    margin-right: 5px;
+    width: 41px;
+  }
+}
+
+.front .bill-link__icon {
+  height: 41px;
+  width: 41px;
+}

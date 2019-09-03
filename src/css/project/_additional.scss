@@ -3,6 +3,10 @@
     line-height: 28px;
   }
 
+  .color-purple {
+    color: $purple;
+  }
+
   .fw_400 {
     font-weight: 400;
   }
@@ -26,6 +30,10 @@
     }
   }
 
+  .phone {
+    text-decoration: none;
+  }
+
   .menu-bottom {
     justify-content: center;
     position: relative;
@@ -41,6 +49,7 @@
       padding-bottom: 20px;
       position: relative;
       transition: all 0.3s;
+      text-decoration: none;
 
       &::after {
         background-color: $purple;
@@ -74,5 +83,13 @@
         display: block;
       }
     }
+  }
+
+  .footer-list-item a {
+    text-decoration: none;
+  }
+
+  .footer-link {
+    text-decoration: none;
   }
 }

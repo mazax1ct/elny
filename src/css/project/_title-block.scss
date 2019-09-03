@@ -1,25 +1,23 @@
-.front {
-  .title-block {
+.title-block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &__controls {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    font-size: 16px;
+    line-height: 18px;
 
-    &__controls {
-      align-items: center;
-      display: flex;
-      font-size: 16px;
-      line-height: 18px;
+    a {
+      color: $deep_black;
+      margin-right: 16px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      text-decoration: underline;
 
-      a {
-        color: $deep_black;
-        margin-right: 16px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        text-decoration: underline;
-
-        &:last-child {
-          margin-right: 0;
-        }
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

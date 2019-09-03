@@ -1,0 +1,101 @@
+.product-image {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 80px;
+    left: auto;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    padding: 0;
+    width: 80px;
+    z-index: 1;
+  }
+
+  &__close-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  &__image-block {
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+
+    img {
+      max-width: initial;
+      width: 100%;
+    }
+  }
+
+  &__slider-block {
+    background-color: rgba(#7F859C, 0.4);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 20px;
+    top: auto;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__slider-block-inner {
+
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__slider-item {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &.is-active {
+      .product-image__slider-item-inner {
+        &::after {
+          background-color: rgba(0,0,0,0.6);
+          content: '';
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: 1;
+        }
+
+        &::before {
+          background-image: url("data:image/svg+xml,%3Csvg width='35' height='34' viewBox='0 0 35 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.1171 16.8554L16.1504 19.3387V14.3721L21.1171 16.8554Z' fill='white'/%3E%3Cpath opacity='0.3' fill-rule='evenodd' clip-rule='evenodd' d='M17.569 33.1742C26.5818 33.1742 33.8881 25.8679 33.8881 16.8552C33.8881 7.84242 26.5818 0.536133 17.569 0.536133C8.55629 0.536133 1.25 7.84242 1.25 16.8552C1.25 25.8679 8.55629 33.1742 17.569 33.1742Z' stroke='white'/%3E%3C/svg%3E%0A");
+          background-size: 32px 32px;
+          content: '';
+          height: 32px;
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 32px;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  &__slider-item-inner {
+    position: relative;
+  }
+}
+
+.front .product-image__close-icon {
+  height: 40px;
+  width: 40px;
+}

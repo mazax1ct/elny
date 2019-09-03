@@ -1,76 +1,74 @@
-.front {
-  .about-delivery {
+.about-delivery {
+  display: flex;
+  margin-bottom: 75px;
+
+  &__col {
+    width: 50%
+  }
+
+  &__row {
     display: flex;
-    margin-bottom: 75px;
+    margin-left: -17px;
+    margin-right: -17px;
+    margin-bottom: 55px;
 
-    &__col {
-      width: 50%
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 
-    &__row {
+  &__item {
+    max-width: 280px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+
+.delivery-item {
+  font-size: 14px;
+  line-height: 22px;
+
+  &__title-block {
+    border: 1px solid rgba(#7F859C, 0.48);
+    min-height: 90px;
+    margin-bottom: 15px;
+    max-width: 233px;
+    padding: 12px 15px;
+
+    &--type_1 {
       display: flex;
-      margin-left: -17px;
-      margin-right: -17px;
-      margin-bottom: 55px;
+      position: relative;
 
-      &:last-child {
-        margin-bottom: 0;
+      img {
+        bottom: 8px;
+        left: auto;
+        position: absolute;
+        right: 15px;
+        top: auto;
       }
     }
 
-    &__item {
-      max-width: 280px;
-      padding-left: 17px;
-      padding-right: 17px;
-    }
-  }
-
-  .delivery-item {
-    font-size: 14px;
-    line-height: 22px;
-
-    &__title-block {
-      border: 1px solid rgba(#7F859C, 0.48);
-      min-height: 90px;
-      margin-bottom: 15px;
-      max-width: 233px;
-      padding: 12px 15px;
-
-      &--type_1 {
-        display: flex;
-        position: relative;
-
-        img {
-          bottom: 8px;
-          left: auto;
-          position: absolute;
-          right: 15px;
-          top: auto;
-        }
-      }
-
-      &--type_2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-left: 36px;
-      }
-
-      &--type_3 {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding: 0
-      }
+    &--type_2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 36px;
     }
 
-    a {
-      color: #000;
-      text-decoration: underline;
+    &--type_3 {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 0
     }
   }
 
-  .about-delivery-text {
-    max-width: 855px;
+  a {
+    color: #000;
+    text-decoration: underline;
   }
+}
+
+.about-delivery-text {
+  max-width: 855px;
 }
