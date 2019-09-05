@@ -8,12 +8,15 @@
   &__title-block {
     align-items: flex-start;
     display: flex;
+    justify-content: space-between;
     margin-bottom: 5px;
   }
 
   &__title {
     color: $deep_black;
     font-weight: 700;
+    flex-grow: 1;
+    max-width: 310px;
   }
 
   &__upload {
@@ -90,8 +93,8 @@
 
   &__delete-icon {
     fill: $purple;
-    height: 12px;
-    width: 12px;
+    height: 8px;
+    width: 8px;
 
     use {
       fill: $purple;
@@ -101,7 +104,7 @@
 
 .front {
   .doc-upload__delete-icon {
-    height: 12px;
-    width: 12px;
+    height: 8px;
+    width: 8px;
   }
 }

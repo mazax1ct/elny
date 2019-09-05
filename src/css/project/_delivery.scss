@@ -40,7 +40,7 @@
       position: relative;
 
       img {
-        bottom: 8px;
+        bottom: 10px;
         left: auto;
         position: absolute;
         right: 15px;
@@ -70,5 +70,6 @@
 }
 
 .about-delivery-text {
+  line-height: 22px;
   max-width: 855px;
 }

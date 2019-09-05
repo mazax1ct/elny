@@ -82,11 +82,6 @@ body.overflow {
     margin-bottom: 10px;
   }
 
-  .input-block__input,
-  .input-block__textarea {
-    background-color: #F2F2F5;
-  }
-
   &__button-block {
     &--two_btn {
       display: flex;
@@ -135,6 +130,29 @@ body.overflow {
 
     &:last-child {
       padding-left: 25px;
+    }
+  }
+
+  .input-block__input,
+  .input-block__textarea {
+    background-color: #F2F2F5;
+  }
+
+  .button {
+    background-color: #F2F2F5;
+
+    &:hover,
+    &:focus {
+      background-color: $purple;
+    }
+
+    &--fill {
+      background-color: $purple;
+
+      &:hover,
+      &:focus {
+        background-color: $dark_purple;
+      }
     }
   }
 }

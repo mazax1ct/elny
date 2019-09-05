@@ -23,6 +23,14 @@
   margin-left: 3px;
   margin-right: 3px;
 
+  &:hover,
+  &:focus {
+    .size-checkbox__text {
+      background-color: lighten(#AEB2C0, 10%);
+      color: #ECDEDE;
+    }
+  }
+
   input[type="checkbox"] {
     position: absolute;
     height: 1px;

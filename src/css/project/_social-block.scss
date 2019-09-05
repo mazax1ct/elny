@@ -18,7 +18,13 @@
   height: 49px;
   margin-left: 8px;
   margin-right: 8px;
+  transition: opacity 0.3s;
   width: 49px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+  }
 
   img {
     height: auto;
