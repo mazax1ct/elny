@@ -160,7 +160,7 @@ body {
     &-item {
       padding: 10px;
       cursor: pointer;
-      
+
       &:hover {
         background: $autocomplete;
       }
@@ -175,7 +175,7 @@ body {
       color: $black;
     }
   }
-  
+
   .rub {
     font-family: 'RubArial';
   }
@@ -240,7 +240,7 @@ body {
       float: right;
       margin-right: 15px;
     }
-    
+
     &-content {
       color: #000;
       background: $accordeon_bg;
@@ -730,7 +730,7 @@ body {
         font-size: 22px;
         line-height: 24px;
         color: $purple;
-        
+
         a {
           color: $purple;
           text-decoration: underline;
@@ -825,7 +825,7 @@ body {
         display: inline-block;
         margin-right: 10px;
       }
-      
+
       &-removeall {
         font-weight: 600;
         cursor: pointer;
@@ -985,7 +985,7 @@ body {
     }
   }
 
-  .footer {
+  /*.footer {
     background: $purple;
     overflow: hidden;
     margin-top: 50px;
@@ -1176,7 +1176,7 @@ body {
         }
       }
     }
-  }
+  }*/
 
   .search {
     cursor: pointer;
@@ -1197,7 +1197,7 @@ body {
     use {
       fill: transparent;
     }
-    
+
     svg  {
       max-width: 18px;
       max-height: 18px;
@@ -1500,7 +1500,7 @@ body {
         }
       }
     }
-    
+
     &-counter {
       position: absolute;
       top: -15px;
@@ -1609,7 +1609,7 @@ body {
     font-size: 16px;
     color: #fff;
     margin-left: 20px;
-    
+
     &:hover {
       text-decoration: none;
     }

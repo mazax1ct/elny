@@ -22,11 +22,16 @@ body.overflow {
   display: none;
   left: 50%;
   max-width: 364px;
-  padding: 36px 36px 30px;
+  padding: 36px 24px 30px;
   position: absolute;
   top: 50px;
   transform: translateX(-50%);
   width: 100%;
+
+  @media(min-width: 960px) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 
   &--v_align_center {
     display: flex;
@@ -44,6 +49,11 @@ body.overflow {
 
   &--maxw_520 {
     max-width: 520px;
+
+    @media(min-width: 540px) {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
   }
 
   &--maxw_950 {
@@ -84,11 +94,19 @@ body.overflow {
 
   &__button-block {
     &--two_btn {
-      display: flex;
-      justify-content: space-between;
+      @media(min-width: 400px) {
+        display: flex;
+        justify-content: space-between;
+      }
 
       .button {
-        width: calc(50% - 12px);
+        margin-bottom: 5px;
+        width: 100%;
+
+        @media(min-width: 400px) {
+          margin-bottom: 0;
+          width: calc(50% - 12px);
+        }
       }
     }
   }
@@ -118,18 +136,29 @@ body.overflow {
   }
 
   &__row {
-    display: flex;
+    @media(min-width: 768px) {
+      display: flex;
+    }
   }
 
   &__column {
-    width: 50%;
+    @media(min-width: 768px) {
+      width: 50%;
+    }
 
     &:first-child {
-      padding-right: 25px;
+      margin-bottom: 15px;
+
+      @media(min-width: 768px) {
+        margin-bottom: 0;
+        padding-right: 25px;
+      }
     }
 
     &:last-child {
-      padding-left: 25px;
+      @media(min-width: 768px) {
+        padding-left: 25px;
+      }
     }
   }
 

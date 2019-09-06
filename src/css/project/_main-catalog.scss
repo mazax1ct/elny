@@ -78,6 +78,7 @@
     }
 
     img {
+      will-change: transform;
       transition: transform 0.3s;
     }
 
