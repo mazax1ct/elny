@@ -1732,7 +1732,7 @@ body * {
 }
 
 .front .search use {
-  fill: transparent;
+  /*fill: transparent;*/
 }
 
 .front .search svg {
