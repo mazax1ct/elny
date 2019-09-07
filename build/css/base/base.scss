@@ -95,13 +95,13 @@ $heights: (500, 571);
 body {
   background: $main_bg;
 
-  * {
+  /** {
     font-family: Muller;
-  }
+  }*/
 }
 
 .front {
-  svg  {
+  /*svg  {
     width: 100%;
     height: 100%;
   }
@@ -125,7 +125,7 @@ body {
   h3 {
     font-size: 22px;
     line-height: 24px;
-  }
+  }*/
 
   .width {
     &-500 {
@@ -160,7 +160,7 @@ body {
     &-item {
       padding: 10px;
       cursor: pointer;
-      
+
       &:hover {
         background: $autocomplete;
       }
@@ -175,7 +175,7 @@ body {
       color: $black;
     }
   }
-  
+
   .rub {
     font-family: 'RubArial';
   }
@@ -240,7 +240,7 @@ body {
       float: right;
       margin-right: 15px;
     }
-    
+
     &-content {
       color: #000;
       background: $accordeon_bg;
@@ -730,7 +730,7 @@ body {
         font-size: 22px;
         line-height: 24px;
         color: $purple;
-        
+
         a {
           color: $purple;
           text-decoration: underline;
@@ -825,7 +825,7 @@ body {
         display: inline-block;
         margin-right: 10px;
       }
-      
+
       &-removeall {
         font-weight: 600;
         cursor: pointer;
@@ -946,7 +946,7 @@ body {
     }
   }
 
-  .header {
+  /*.header {
     background: $purple;
     height: 80px;
 
@@ -974,7 +974,7 @@ body {
         }
       }
     }
-  }
+  }*/
 
   .flex {
     display: flex;
@@ -985,7 +985,7 @@ body {
     }
   }
 
-  .footer {
+  /*.footer {
     background: $purple;
     overflow: hidden;
     margin-top: 50px;
@@ -1176,9 +1176,9 @@ body {
         }
       }
     }
-  }
+  }*/
 
-  .search {
+  /*.search {
     cursor: pointer;
     border: none;
     width: 50px;
@@ -1197,7 +1197,7 @@ body {
     use {
       fill: transparent;
     }
-    
+
     svg  {
       max-width: 18px;
       max-height: 18px;
@@ -1236,9 +1236,9 @@ body {
         display: block !important;
       }
     }
-  }
+  }*/
 
-  .menu {
+  /*.menu {
     background: $menu_bg;
 
     &-top {
@@ -1314,7 +1314,7 @@ body {
         }
       }
     }
-  }
+  }*/
 
   .breadcrumb {
     padding: 15px 0;
@@ -1500,7 +1500,7 @@ body {
         }
       }
     }
-    
+
     &-counter {
       position: absolute;
       top: -15px;
@@ -1609,7 +1609,7 @@ body {
     font-size: 16px;
     color: #fff;
     margin-left: 20px;
-    
+
     &:hover {
       text-decoration: none;
     }

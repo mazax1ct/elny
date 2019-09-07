@@ -1,6 +1,18 @@
 @import "project/_variables.scss";
 
+@import "project/_fonts.scss";
+
+@import "project/_typographic.scss";
+
 @import "project/_additional.scss";
+
+@import "project/_header.scss";
+
+@import "project/_search.scss";
+
+@import "project/_catalog-menu.scss";
+
+@import "project/_breadcrumbs.scss";
 
 @import "project/_footer.scss";
 
@@ -23,8 +35,6 @@
 @import "project/_main-slider.scss";
 
 @import "project/_banner.scss";
-
-@import "project/_dropdown-menu.scss";
 
 @import "project/_features.scss";
 

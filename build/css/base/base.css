@@ -758,16 +758,14 @@ body {
   background: #fff;
 }
 
-body * {
+/*body * {
   font-family: Muller;
-}
-
-.front svg {
+}*/
+/*.front svg {
   width: 100%;
   height: 100%;
-}
-
-.front h1, .front h2, .front h3, .front h4, .front h5 {
+}*/
+/*.front h1, .front h2, .front h3, .front h4, .front h5 {
   font-weight: bold;
 }
 
@@ -786,8 +784,7 @@ body * {
 .front h3 {
   font-size: 22px;
   line-height: 24px;
-}
-
+}*/
 .front .width-500 {
   width: 100%;
   max-width: 500px;
@@ -1556,7 +1553,7 @@ body * {
   cursor: pointer;
 }
 
-.front .header {
+/*.front .header {
   background: #7F859C;
   height: 80px;
 }
@@ -1584,8 +1581,7 @@ body * {
 
 .front .header .logo-wrapper img {
   margin-left: -19px;
-}
-
+}*/
 .front .flex {
   display: flex;
 }
@@ -1716,7 +1712,7 @@ body * {
       .front .footer .logo-wrapper img {
         margin-left: -19px;
         margin-top: -20px; }*/
-.front .search {
+/*.front .search {
   cursor: pointer;
   border: none;
   width: 50px;
@@ -1732,7 +1728,7 @@ body * {
 }
 
 .front .search use {
-  /*fill: transparent;*/
+  fill: transparent;
 }
 
 .front .search svg {
@@ -1769,9 +1765,8 @@ body * {
 
 .front .search-container-open {
   display: block !important;
-}
-
-.front .menu {
+}*/
+/*.front .menu {
   background: #ECDEDE;
 }
 
@@ -1843,8 +1838,7 @@ body * {
 .front .menu-bottom-item a:hover {
   text-decoration: none;
   color: #111;
-}
-
+}*/
 .front .breadcrumb {
   padding: 15px 0;
   margin-left: -5px;

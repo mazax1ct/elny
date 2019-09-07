@@ -1,50 +1,61 @@
 <header class="header">
-  <div class="container header-wrapper">
-    <div class="header-element"><a href="http://elny.azbuka.pro/" class="logo-wrapper"><img src="images/f932979b72a4157fe6e8f571f3e06045_big.png" alt="Elny" class="logo"></a></div>
-    <div class="header-element">
-      <nav class="menu-top">
-        <ul class="menu-top-list">
-          <li class="menu-top-list-item"><a href="http://elny.azbuka.pro/catalog" class="active">Каталог</a></li>
-          <li class="menu-top-list-item"><a href="http://elny.azbuka.pro/">АКЦИИ</a></li>
-          <li class="menu-top-list-item"><a href="http://elny.azbuka.pro/about-page">О нас</a></li>
-          <li class="menu-top-list-item"><a href="http://elny.azbuka.pro/delivery-page">ДОСТАВКА И ОПЛАТА</a></li>
-          <li class="menu-top-list-item"><a href="http://elny.azbuka.pro/vacancy">КОНТАКТЫ</a></li>
-          <li class="menu-top-list-item"><a href="http://elny.azbuka.pro/markets">Магазины</a></li>
-          <li class="menu-top-list-item"><a href="http://elny.azbuka.pro/optom-page">ОПТОВИКАМ</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-element search-container-wrapper">
-      <div class="search-container ">
-        <div class="search-container-image">
-          <img src="images/search.png" alt="">
-        </div>
-        <input type="text" class="search-input">
-      </div>
-      <button class="search">
-        <span class="icon-search">
-          <svg>
-            <use xlink:href="#icon-search"></use>
-          </svg>
-        </span>
-      </button>
-      <a href="tel:8 (812) 318 45 09" class="phone">8 (812) 318 45 09</a>
-    </div>
-    <div class="header-element header-right">
-      <a href="http://elny.azbuka.pro/login" title="Вход" class="icon icon-header">
-        <svg>
-          <use xlink:href="#icon-user"></use>
+  <div class="header__inner">
+    <a class="header__logo" href="#">
+      <img src="images/header/logo.png" alt="ELNY">
+    </a>
+    <nav class="header__menu menu-top">
+      <ul class="menu-top__list">
+        <li class="menu-top__item"><a class="menu-top__link" href="#" class="active">Каталог</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#">АКЦИИ</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#">О нас</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#">ДОСТАВКА И ОПЛАТА</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#">КОНТАКТЫ</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#">Магазины</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#">ОПТОВИКАМ</a></li>
+      </ul>
+    </nav>
+    <div class="header__search search">
+      <button class="js-search-open search__opener" type="button" title="Поиск">
+        <svg class="search__opener-icon">
+          <use xlink:href="#search"></use>
         </svg>
-      </a>
-      <div class="cart-mini">
-        <div>
-          <a title="Корзина" href="http://elny.azbuka.pro/cart" class="icon icon-header icon-header-nom">
-            <svg>
-              <use xlink:href="#icon-cart"></use>
+      </button>
+      <div class="search__form">
+        <form action="">
+          <label class="search__label" for="search">
+            <input id="search" class="search__input" type="text" name="search" value="" placeholder="Поиск по сайту">
+          </label>
+          <button class="search__submit" type="submit">
+            <svg class="search__submit-icon">
+              <use xlink:href="#search"></use>
             </svg>
-          </a>
-        </div>
+          </button>
+        </form>
       </div>
     </div>
+    <div class="header__phone">
+      <a class="header__phone-link" href="tel:+78123184509"><span class="header__phone-link-text">8 (812) 318 45 09</span></a>
+    </div>
+    <a class="header__link" href="#" title="Личный кабинет">
+      <svg class="header__link-icon header__link-icon--user">
+        <use xlink:href="#user"></use>
+      </svg>
+    </a>
+    <a class="header__link" href="#" title="Избранное">
+      <svg class="header__link-icon header__link-icon--favorite">
+        <use xlink:href="#favorite"></use>
+      </svg>
+    </a>
+    <a class="header__link header__cart" href="#" title="Корзина">
+      <span class="header__cart-qnt">9</span>
+      <svg class="header__link-icon header__link-icon--cart">
+        <use xlink:href="#cart"></use>
+      </svg>
+    </a>
+    <a class="header__link" href="#" title="Выйти">
+      <svg class="header__link-icon header__link-icon--logout">
+        <use xlink:href="#logout"></use>
+      </svg>
+    </a>
   </div>
 </header>

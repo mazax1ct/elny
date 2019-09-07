@@ -16,30 +16,16 @@
   //= template/svg.html
   <div id="app">
     //= template/header.html
-    //= template/menu_second_level.html
-    //= template/alert-holder.html
-    <div class="container">
-      <div class="breadcrumb">
-        <ul class="breadcrumb-holder">
-          <li class="breadcrumb-item"><a href="http://elny.azbuka.pro/">Главная</a></li>
-          <li class="breadcrumb-item">
-            <span class="breadcrumb-separator">
-              <svg>
-                <use xlink:href="#separator"></use>
-              </svg>
-            </span>
-          </li>
-          <li class="breadcrumb-item">
-            <span class="breadcrumb-last">
-              Доставка и оплата
-            </span>
-          </li>
-          <li class="breadcrumb-item"></li>
-        </ul>
-      </div>
-    </div>
+    //= template/catalog_menu.html
+    //= template/alert_holder.html
     <div class="main">
       <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">Доставка и оплата</li>
+        </ul>
         <h1 class="mb-45">Доставка и оплата</h1>
         <div class="about-delivery">
           <div class="about-delivery__col">

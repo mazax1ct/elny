@@ -1,4 +1,11 @@
 $(document).ready(function () {
+  //открытие формы поиска в шапке
+  $('.js-search-open').click(function () {
+    $(this).addClass('is-active');
+    $('.search__form').addClass('is-open');
+    return false;
+  });
+
   //открытие попапа
   $('.js-popup-open').click(function () {
     $('body').addClass('overflow');
