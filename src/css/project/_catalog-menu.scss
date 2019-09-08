@@ -26,10 +26,14 @@
   }
 
   &__item {
-    margin-right: 33px;
+    margin-right: 24px;
 
     @media(min-width: 992px) and (max-width: 1199px) {
       margin-right: 20px;
+    }
+
+    @media(min-width: 1200px) {
+      margin-right: 33px;
     }
 
     &:last-child {
