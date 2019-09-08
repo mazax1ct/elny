@@ -12,14 +12,25 @@
   &__list {
     align-items: center;
     display: flex;
-    justify-content: center;
     min-height: 54px;
     position: relative;
     z-index: 3;
+
+    @media(max-width: 991px) {
+      overflow-x: auto;
+    }
+
+    @media(min-width: 992px) {
+      justify-content: center;
+    }
   }
 
   &__item {
     margin-right: 33px;
+
+    @media(min-width: 992px) and (max-width: 1199px) {
+      margin-right: 20px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -27,7 +38,21 @@
 
     &:hover {
       & > .dropdown-menu {
-        display: block;
+        @media(min-width: 992px) {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    &:focus-within {
+      & > .dropdown-menu {
+        @media(min-width: 992px) {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
   }
@@ -42,6 +67,11 @@
     position: relative;
     transition: all 0.3s;
     text-decoration: none;
+    text-align: center;
+
+    @media(max-width: 991px) {
+      white-space: nowrap;
+    }
 
     &::after {
       background-color: $purple;
@@ -68,6 +98,16 @@
         transform: translateX(-50%);
       }
     }
+
+    &:focus-within {
+      & + .dropdown-menu {
+        @media(min-width: 992px) {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
   }
 }
 
@@ -76,10 +116,12 @@
   display: none;
   left: 50%;
   max-width: 1280px;
+  opacity: 0;
   padding:  34px 34px 0;
   position: absolute;
   transform: translateX(-50%);
   top: 100%;
+  visibility: hidden;
   width: 100%;
   z-index: 1;
 

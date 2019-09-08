@@ -120,6 +120,11 @@ body.overflow {
       color: rgba(0,0,0,0.62);
       font-weight: 500;
       text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
     }
   }
 

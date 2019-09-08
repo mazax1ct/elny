@@ -197,15 +197,20 @@
         <a class="header__logo" href="#">
           <img src="images/header/logo.png" alt="ELNY">
         </a>
+        <button class="js-menu-open menu-opener" type="button"><span class="menu-opener__burger"></span></button>
         <nav class="header__menu menu-top">
           <ul class="menu-top__list">
-            <li class="menu-top__item"><a class="menu-top__link" href="#" class="active">Каталог</a></li>
+            <li class="menu-top__item"><a class="menu-top__link is-active" href="#" class="active">Каталог</a></li>
             <li class="menu-top__item"><a class="menu-top__link" href="#">АКЦИИ</a></li>
             <li class="menu-top__item"><a class="menu-top__link" href="#">О нас</a></li>
             <li class="menu-top__item"><a class="menu-top__link" href="#">ДОСТАВКА И ОПЛАТА</a></li>
             <li class="menu-top__item"><a class="menu-top__link" href="#">КОНТАКТЫ</a></li>
             <li class="menu-top__item"><a class="menu-top__link" href="#">Магазины</a></li>
             <li class="menu-top__item"><a class="menu-top__link" href="#">ОПТОВИКАМ</a></li>
+            <li class="menu-top__item menu-top__item--no_desktop"><a class="menu-top__link" href="#">Личный кабинет</a></li>
+            <li class="menu-top__item menu-top__item--no_desktop"><a class="menu-top__link" href="#">Избранное</a></li>
+            <li class="menu-top__item menu-top__item--no_desktop"><a class="menu-top__link" href="#">Корзина</a></li>
+            <li class="menu-top__item menu-top__item--no_desktop"><a class="menu-top__link" href="#">Выйти</a></li>
           </ul>
         </nav>
         <div class="header__search search">
@@ -214,8 +219,9 @@
               <use xlink:href="#search"></use>
             </svg>
           </button>
+          <button class="js-search-close search__closer" type="button" title="Закрыть"><span class="search__closer-icon"></span></button>
           <div class="search__form">
-            <form action="">
+            <form class="search__form-inner" action="">
               <label class="search__label" for="search">
                 <input id="search" class="search__input" type="text" name="search" value="" placeholder="Поиск по сайту">
               </label>
@@ -260,9 +266,9 @@
           <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Верхняя одежда</a></li>
           <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Трикотаж</a></li>
           <li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Нижнее белье</a></li>
-          <li class="catalog-menu__item">
+          <li class="catalog-menu__item" aria-haspopup="true">
             <a class="catalog-menu__link" href="#">Аксессуары</a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu" aria-label="submenu">
               <ul class="dropdown-menu__inner">
                 <li class="dropdown-menu__item">
                   <a class="dropdown-menu__link" href="#">
@@ -387,17 +393,17 @@
           </div>
           <div class="footer__socials">
             <a class="footer__social-link" href="#" title="Вконтакте" target="_blank">
-              <svg class="icon icon--vk">
+              <svg class="footer__social-icon footer__social-icon--vk">
                 <use xlink:href="#social-vk"></use>
               </svg>
             </a>
             <a class="footer__social-link" href="#" title="Facebook" target="_blank">
-              <svg class="icon icon--fb">
+              <svg class="footer__social-icon footer__social-icon--fb">
                 <use xlink:href="#social-fb"></use>
               </svg>
             </a>
             <a class="footer__social-link" href="#" title="Instagram" target="_blank">
-              <svg class="icon icon--inst">
+              <svg class="footer__social-icon footer__social-icon--inst">
                 <use xlink:href="#social-inst"></use>
               </svg>
             </a>

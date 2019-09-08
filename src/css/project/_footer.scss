@@ -239,23 +239,31 @@
     margin-right: 22px;
     width: 24px;
 
-    .icon {
-      fill: #B2B6C4;
-
-      &--vk {
-        height: 13px;
-        width: 24px;
+    &:hover,
+    &:focus {
+      .footer__social-icon {
+        fill: lighten(#B2B6C4, 10%);
       }
+    }
+  }
 
-      &--fb {
-        height: 17px;
-        width: 8px;
-      }
+  &__social-icon {
+    fill: #B2B6C4;
+    transition: fill 0.3s;
 
-      &--inst {
-        height: 18px;
-        width: 18px;
-      }
+    &--vk {
+      height: 13px;
+      width: 24px;
+    }
+
+    &--fb {
+      height: 17px;
+      width: 8px;
+    }
+
+    &--inst {
+      height: 18px;
+      width: 18px;
     }
   }
 
