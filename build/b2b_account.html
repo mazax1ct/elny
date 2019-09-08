@@ -164,8 +164,8 @@
         <path d="M2.8,5.4L8,0.2c0.3-0.3,0.9-0.3,1.2,0c0.3,0.3,0.3,0.9,0,1.2L4.6,6l4.7,4.6c0.3,0.3,0.3,0.9,0,1.2c-0.3,0.3-0.9,0.3-1.2,0L2.8,6.6C2.6,6.4,2.5,6.2,2.5,6C2.5,5.8,2.6,5.6,2.8,5.4z" />
       </symbol>
       <symbol id="icon-acs-desc" viewBox="0 0 15 15">
-        <path d="M4.09196 1.02477L4.03711 13.0247M4.03711 13.0247L7.03711 8.52466M4.03711 13.0247L1.03733 8.52467" stroke="#ECDEDE" />
-        <path d="M11.5437 14.0247L11.4992 2.02472M11.4992 2.02472L8.53656 6.5494M11.4992 2.02472L14.5361 6.49973" stroke="#ECDEDE" />
+        <path d="M4.09196 1.02477L4.03711 13.0247M4.03711 13.0247L7.03711 8.52466M4.03711 13.0247L1.03733 8.52467" />
+        <path d="M11.5437 14.0247L11.4992 2.02472M11.4992 2.02472L8.53656 6.5494M11.4992 2.02472L14.5361 6.49973" />
       </symbol>
       <symbol id="icon-doc" viewBox="0 0 41 41">
         <path d="M20.5 41C31.8218 41 41 31.8218 41 20.5C41 9.17814 31.8218 0 20.5 0C9.17815 0 0 9.17814 0 20.5C0 31.8218 9.17815 41 20.5 41Z" fill="#7F859C" />
@@ -336,7 +336,7 @@
         <div class="account-grid">
           <form method="get" action="">
             <div class="account-grid__row">
-              <div class="account-grid__item account-grid__item--w_38">
+              <div class="account-grid__cell account-grid__cell--w_38">
                 <h2 class="mb-25">Данные контактного лица</h2>
                 <label class="input-block" for="email_6">
                   <span class="input-block__label">Email</span>
@@ -394,7 +394,7 @@
                   <textarea id="comment_2" class="input-block__textarea"></textarea>
                 </label>
               </div>
-              <div class="account-grid__item account-grid__item--w_38">
+              <div class="account-grid__cell account-grid__cell--w_38">
                 <div class="title-block mb-25">
                   <h2>Реквизиты </h2>
                   <div class="title-block__controls">
@@ -448,24 +448,32 @@
                   <input id="ks_2" class="input-block__input" type="text" name="ks_2" value="">
                 </label>
               </div>
-              <div class="account-grid__item account-grid__item--w_24">
-                <div class="upload-block">
-                  <div class="upload-block__image-block">
-                    <img src="images/b2b_account/cloud.svg" alt="">
+              <div class="account-grid__cell account-grid__cell--w_24">
+                <div class="account-grid__sub-row">
+                  <div class="account-grid__sub-cell account-grid__sub-cell--w_33">
+                    <div class="upload-block">
+                      <div class="upload-block__image-block">
+                        <img src="images/b2b_account/cloud.svg" alt="">
+                      </div>
+                      <p class="upload-block__text">Загрузите учредительные документы<br> PDF, DOC, TXT, SCAN, ODT, NTP</p>
+                      <button class="js-popup-open button button--wide button--fill" type="button" data-popup="docs">Загрузить</button>
+                    </div>
                   </div>
-                  <p class="upload-block__text">Загрузите учредительные документы<br> PDF, DOC, TXT, SCAN, ODT, NTP</p>
-                  <button class="js-popup-open button button--wide button--fill" type="button" data-popup="docs">Загрузить</button>
-                </div>
-                <div class="upload-block">
-                  <div class="upload-block__image-block">
-                    <img src="images/b2b_account/document.svg" alt="">
+                  <div class="account-grid__sub-cell account-grid__sub-cell--w_33">
+                    <div class="upload-block">
+                      <div class="upload-block__image-block">
+                        <img src="images/b2b_account/document.svg" alt="">
+                      </div>
+                      <p class="upload-block__text">Заполните анкету и получите скидку на следущий заказ</p>
+                      <button class="button button--wide button--fill" type="button">Загрузить</button>
+                    </div>
                   </div>
-                  <p class="upload-block__text">Заполните анкету и получите скидку на следущий заказ</p>
-                  <button class="button button--wide button--fill" type="button">Загрузить</button>
-                </div>
-                <div class="discount-block">
-                  <p class="discount-block__text">Ваша персональная скидка</p>
-                  <p class="discount-block__value">10%</p>
+                  <div class="account-grid__sub-cell account-grid__sub-cell--w_33">
+                    <div class="discount-block">
+                      <p class="discount-block__text">Ваша персональная скидка</p>
+                      <p class="discount-block__value">10%</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

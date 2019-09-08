@@ -34,7 +34,7 @@
         <div class="account-grid">
           <form method="get" action="">
             <div class="account-grid__row">
-              <div class="account-grid__item account-grid__item--w_38">
+              <div class="account-grid__cell account-grid__cell--w_38">
                 <h2 class="mb-25">Данные контактного лица</h2>
                 <label class="input-block" for="email_6">
                   <span class="input-block__label">Email</span>
@@ -92,7 +92,7 @@
                   <textarea id="comment_2" class="input-block__textarea"></textarea>
                 </label>
               </div>
-              <div class="account-grid__item account-grid__item--w_38">
+              <div class="account-grid__cell account-grid__cell--w_38">
                 <div class="title-block mb-25">
                   <h2>Реквизиты </h2>
                   <div class="title-block__controls">
@@ -146,24 +146,32 @@
                   <input id="ks_2" class="input-block__input" type="text" name="ks_2" value="">
                 </label>
               </div>
-              <div class="account-grid__item account-grid__item--w_24">
-                <div class="upload-block">
-                  <div class="upload-block__image-block">
-                    <img src="images/b2b_account/cloud.svg" alt="">
+              <div class="account-grid__cell account-grid__cell--w_24">
+                <div class="account-grid__sub-row">
+                  <div class="account-grid__sub-cell account-grid__sub-cell--w_33">
+                    <div class="upload-block">
+                      <div class="upload-block__image-block">
+                        <img src="images/b2b_account/cloud.svg" alt="">
+                      </div>
+                      <p class="upload-block__text">Загрузите учредительные документы<br> PDF, DOC, TXT, SCAN, ODT, NTP</p>
+                      <button class="js-popup-open button button--wide button--fill" type="button" data-popup="docs">Загрузить</button>
+                    </div>
                   </div>
-                  <p class="upload-block__text">Загрузите учредительные документы<br> PDF, DOC, TXT, SCAN, ODT, NTP</p>
-                  <button class="js-popup-open button button--wide button--fill" type="button" data-popup="docs">Загрузить</button>
-                </div>
-                <div class="upload-block">
-                  <div class="upload-block__image-block">
-                    <img src="images/b2b_account/document.svg" alt="">
+                  <div class="account-grid__sub-cell account-grid__sub-cell--w_33">
+                    <div class="upload-block">
+                      <div class="upload-block__image-block">
+                        <img src="images/b2b_account/document.svg" alt="">
+                      </div>
+                      <p class="upload-block__text">Заполните анкету и получите скидку на следущий заказ</p>
+                      <button class="button button--wide button--fill" type="button">Загрузить</button>
+                    </div>
                   </div>
-                  <p class="upload-block__text">Заполните анкету и получите скидку на следущий заказ</p>
-                  <button class="button button--wide button--fill" type="button">Загрузить</button>
-                </div>
-                <div class="discount-block">
-                  <p class="discount-block__text">Ваша персональная скидка</p>
-                  <p class="discount-block__value">10%</p>
+                  <div class="account-grid__sub-cell account-grid__sub-cell--w_33">
+                    <div class="discount-block">
+                      <p class="discount-block__text">Ваша персональная скидка</p>
+                      <p class="discount-block__value">10%</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
