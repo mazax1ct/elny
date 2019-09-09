@@ -4,6 +4,10 @@ body {
   line-height: 18px;
 }
 
+.rub {
+  font-family: 'RubArial';
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
@@ -28,4 +32,9 @@ h1, h2, h3, h4, h5 {
 
 input, textarea, button, select {
   font-family: 'Muller', Arial, sans-serif;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }

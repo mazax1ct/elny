@@ -1,7 +1,10 @@
 .vacancy {
-  align-items: center;
-  display: flex;
   margin-bottom: 65px;
+
+  @media(min-width: 768px) {
+    align-items: center;
+    display: flex;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -28,15 +31,20 @@
   }
 
   &__description {
-    font-size: 18px;
-    line-height: 30px;
     max-width: 720px;
     padding-top: 40px;
 
+    @media(min-width: 768px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
     h2 {
-      font-size: 22px;
-      letter-spacing: 3px;
       margin-bottom: 20px;
+
+      @media(min-width: 768px) {
+        letter-spacing: 3px;
+      }
     }
 
     p {
@@ -49,7 +57,14 @@
   }
 
   &__position {
-    margin-right: 35px;
+    @media(max-width: 767px) {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    @media(min-width: 768px) {
+      margin-right: 35px;
+    }
   }
 
   &__button {

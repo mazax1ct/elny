@@ -1,16 +1,14 @@
 .front {
-  img {
-    height: auto;
-    max-width: 100%;
-  }
-
   .container {
     max-width: 1320px;
 
     &--1440 {
       max-width: 1440px;
-      padding-left: 34px;
-      padding-right: 34px;
+
+      @media(min-width: 1200px) {
+        padding-left: 34px;
+        padding-right: 34px;
+      }
     }
   }
 }

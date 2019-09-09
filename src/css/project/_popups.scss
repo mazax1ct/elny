@@ -82,6 +82,7 @@ body.overflow {
   }
 
   &__close-icon {
+    fill: $purple;
     height: 15px;
     width: 14px;
   }
@@ -168,7 +169,9 @@ body.overflow {
   }
 
   .input-block__input,
-  .input-block__textarea {
+  .input-block__textarea,
+  .custom-select,
+  .custom-select select {
     background-color: #F2F2F5;
   }
 

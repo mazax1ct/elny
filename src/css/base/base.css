@@ -832,10 +832,9 @@ body {
   color: #111;
 }
 
-.front .rub {
+/*.front .rub {
   font-family: 'RubArial';
-}
-
+}*/
 .front .ul {
   padding-left: 1.4rem;
 }
@@ -1116,10 +1115,9 @@ body {
   margin: 0 auto;
 }
 
-.front .container img {
+/*.front .container img {
   max-width: 100%;
-}
-
+}*/
 .front .delivery-info tr td {
   padding-bottom: 5px;
 }
@@ -1839,7 +1837,7 @@ body {
   text-decoration: none;
   color: #111;
 }*/
-.front .breadcrumb {
+/*.front .breadcrumb {
   padding: 15px 0;
   margin-left: -5px;
 }
@@ -1877,8 +1875,7 @@ body {
 .front .breadcrumb-last {
   font-size: 12px;
   color: #666B80;
-}
-
+}*/
 .front .tabs {
   display: inline-block;
   position: absolute;

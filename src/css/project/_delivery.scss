@@ -1,16 +1,34 @@
 .about-delivery {
-  display: flex;
-  margin-bottom: 75px;
+  margin-bottom: 35px;
 
-  &__col {
-    width: 50%
-  }
-
-  &__row {
+  @media(min-width: 992px) {
     display: flex;
     margin-left: -17px;
     margin-right: -17px;
-    margin-bottom: 55px;
+    margin-bottom: 75px;
+  }
+
+  &__col {
+    @media(min-width: 600px) and (max-width: 991px) {
+      margin-bottom: 55px;
+    }
+
+    @media(min-width: 992px) {
+      padding-left: 17px;
+      padding-right: 17px;
+      width: 50%;
+    }
+  }
+
+  &__row {
+    margin-bottom: 17px;
+
+    @media(min-width: 600px) {
+      display: flex;
+      margin-left: -17px;
+      margin-right: -17px;
+      margin-bottom: 55px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -19,8 +37,13 @@
 
   &__item {
     max-width: 280px;
-    padding-left: 17px;
-    padding-right: 17px;
+    margin-bottom: 17px;
+
+    @media(min-width: 600px) {
+      margin-bottom: 0;
+      padding-left: 17px;
+      padding-right: 17px;
+    }
   }
 }
 

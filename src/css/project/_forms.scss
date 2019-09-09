@@ -87,6 +87,7 @@
   }
 
   .custom-select {
+    background-color: #fff;
     height: 40px;
     position: relative;
 
@@ -110,6 +111,7 @@
       appearance: none;
       outline: 0;
       box-shadow: none;
+      background-color: #fff;
       border: 1px solid $purple;
       border-radius: 0;
       background-image: none;
@@ -153,12 +155,19 @@
   min-width: 270px;
   overflow: hidden;
   position: relative;
-  padding: 10px;
+  padding: 11px 10px 10px;
+  transition: color 0.3s, background-color 0.3s;
   text-overflow: ellipsis;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
   width: 270px;
+
+  &:hover,
+  &:focus {
+    background-color: $purple;
+    color: #ecdede;
+  }
 
   &__file {
     cursor: pointer;
@@ -213,15 +222,11 @@
   }
 
   &--faded {
-    background-color: #fff;
-    border-color: #ABAFBA;
-    color: #ABAFBA;
+    opacity: 0.8;
 
     &:hover,
     &:focus {
-      background-color: #fff;
-      border-color: $purple;
-      color: $purple;
+      opacity: 1;
     }
   }
 

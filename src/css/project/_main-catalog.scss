@@ -1,21 +1,32 @@
 .catalog-grid {
   &__row {
-    display: flex;
-    margin-left: -17px;
-    margin-right: -17px;
-    margin-bottom: 34px;
+    @media(min-width: 768px) {
+      display: flex;
+      margin-left: -17px;
+      margin-right: -17px;
+      margin-bottom: 34px;
+    }
   }
 
   &__cell {
-    padding-left: 17px;
-    padding-right: 17px;
+    margin-bottom: 17px;
+
+    @media(min-width: 768px) {
+      margin-bottom: 0;
+      padding-left: 17px;
+      padding-right: 17px;
+    }
 
     &--2_cols {
-      width: 50%;
+      @media(min-width: 768px) {
+        width: 50%;
+      }
     }
 
     &--3_cols {
-      width: 33.33333%
+      @media(min-width: 768px) {
+        width: 33.33333%;
+      }
     }
   }
 
@@ -91,8 +102,9 @@
   }
 
   &__link-title {
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
     letter-spacing: 6px;
     left: 0;
     position: absolute;
@@ -105,13 +117,31 @@
     width: 100%;
     z-index: 2;
 
+    @media(min-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media(min-width: 1200px) {
+      font-size: 27px;
+    }
+
     &--type_2,
     &--type_3 {
-      font-size: 36px;
-      letter-spacing: 6px;
-      padding-left: 92px;
-      padding-right: 92px;
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
       text-align: left;
+
+      @media(min-width: 768px) {
+        font-size: 24px;
+      }
+
+      @media(min-width: 1200px) {
+        font-size: 36px;
+        letter-spacing: 6px;
+        padding-left: 92px;
+        padding-right: 92px;
+      }
     }
 
     &--type_3 {

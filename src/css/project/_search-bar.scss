@@ -39,7 +39,7 @@
     cursor: pointer;
     height: 32px;
     left: auto;
-    padding: 0;
+    padding: 1px 0 0;
     position: absolute;
     top: 1px;
     right: 1px;
@@ -48,12 +48,8 @@
   }
 
   &__button-icon {
+    fill: $purple;
     height: 18px;
     width: 18px;
   }
-}
-
-.front .search-bar__button-icon {
-  height: 18px;
-  width: 18px;
 }
