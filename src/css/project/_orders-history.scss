@@ -109,17 +109,15 @@
 }
 
 .orders-sorting {
+  display: flex;
   margin-bottom: 20px;
 
-  @media(min-width: 600px) {
-    display: flex;
-  }
-
-  .select {
+  select {
     height: 34px;
+    margin-right: 10px;
 
-    @media(max-width: 599px) {
-      margin-bottom: 10px;
+    @media(min-width: 768px) {
+      min-width: 200px;
     }
   }
 

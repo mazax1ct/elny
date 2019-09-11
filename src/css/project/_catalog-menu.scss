@@ -1,6 +1,10 @@
 .catalog-menu {
   background: $menu_bg;
 
+  @media(max-width: 991px) {
+    display: none;
+  }
+
   &__inner {
     max-width: 1420px;
     margin-left: auto;

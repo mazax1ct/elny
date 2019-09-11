@@ -189,7 +189,22 @@
         <button class="js-menu-open menu-opener" type="button"><span class="menu-opener__burger"></span></button>
         <nav class="header__menu menu-top">
           <ul class="menu-top__list">
-            <li class="menu-top__item"><a class="menu-top__link is-active" href="#" class="active">Каталог</a></li>
+            <li class="menu-top__item menu-top__item--no_desktop">
+              <button class="js-catalog-menu-open menu-top__pseudo-link" type="button">Каталог</button>
+              <ul class="catalog-menu-mobile">
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Новинки</a></li>
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Верхняя одежда</a></li>
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Трикотаж</a></li>
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Нижнее белье</a></li>
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Аксессуары</a></li>
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Бижутерия</a></li>
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Блузки</a></li>
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Сумки</a></li>
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Платья</a></li>
+                <li class="catalog-menu-mobile__item"><a class="catalog-menu-mobile__link" href="#">Распродажа %</a></li>
+              </ul>
+            </li>
+            <li class="menu-top__item menu-top__item--no_mobile"><a class="menu-top__link is-active" href="#">Каталог</a></li>
             <li class="menu-top__item"><a class="menu-top__link" href="#">АКЦИИ</a></li>
             <li class="menu-top__item"><a class="menu-top__link" href="#">О нас</a></li>
             <li class="menu-top__item"><a class="menu-top__link" href="#">ДОСТАВКА И ОПЛАТА</a></li>
@@ -208,7 +223,6 @@
               <use xlink:href="#search"></use>
             </svg>
           </button>
-          <button class="js-search-close search__closer" type="button" title="Закрыть"><span class="search__closer-icon"></span></button>
           <div class="search__form">
             <form class="search__form-inner" action="">
               <label class="search__label" for="search">

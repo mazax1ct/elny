@@ -7,6 +7,13 @@ $(document).ready(function () {
     return false;
   });
 
+  //открытие меню каталога
+  $('.js-catalog-menu-open').click(function () {
+    $(this).toggleClass('is-active');
+    $('.catalog-menu-mobile').toggleClass('is-open');
+    return false;
+  });
+
   //открытие формы поиска в шапке
   $('.js-search-open').click(function () {
     if($('body').width() < 992) {
@@ -27,15 +34,6 @@ $(document).ready(function () {
       $('.search__closer').removeClass('is-active');
       $('body').removeClass('overflow');
     }
-  });
-
-  //закрытие формы поиска в шапке
-  $('.js-search-close').click(function () {
-    $(this).removeClass('is-active');
-    $('body').removeClass('overflow');
-    $('.search__opener').removeClass('is-active');
-    $('.search__form').removeClass('is-open');
-    return false;
   });
 
   //открытие попапа
