@@ -489,13 +489,12 @@
 }
 
 .employee {
-  @media(min-width: 400px) {
-    align-items: center;
-    display: flex;
-  }
+  align-items: center;
+  display: flex;
+
 
   @media(max-width: 767px) {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
   &--mod_1 {
@@ -525,9 +524,8 @@
     z-index: 2;
 
     @media(max-width: 479px) {
-      margin-bottom: 15px;
-      min-width: 150px;
-      max-width: 150px;
+      min-width: 100px;
+      max-width: 100px;
     }
 
     &:hover,
@@ -556,6 +554,10 @@
     width: 100%;
     z-index: 1;
 
+    @media(max-width: 767px) {
+      display: none;
+    }
+
     &::before {
       color: #fff;
       content: '...';
@@ -570,11 +572,9 @@
   }
 
   &__info {
-    @media(min-width: 400px) {
-      padding-left: 15px;
-    }
+    padding-left: 15px;
 
-    @media(min-width: 768px) {
+    @media(min-width: 480px) {
       padding-left: 30px;
     }
   }
@@ -588,9 +588,9 @@
 
   &__name {
     color: $purple;
-    font-size: 26px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 22px;
     margin-bottom: 20px;
 
     br {
@@ -599,7 +599,9 @@
       }
     }
 
-    @media(min-width: 480px) {
+    @media(min-width: 768px) {
+      font-size: 26px;
+      line-height: 28px;
       margin-bottom: 70px;
     }
   }
@@ -611,18 +613,18 @@
     font-size: 14px;
     line-height: 1;
     font-weight: 500;
-
-    @media(max-width: 479px) {
-      display: none;
-    }
   }
 
   &__number-of {
     color: $purple;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 19px;
     margin-right: 10px;
+
+    @media(min-width: 768px) {
+      font-size: 22px;
+      line-height: 19px;
+    }
   }
 }
 
